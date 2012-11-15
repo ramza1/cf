@@ -1,0 +1,2 @@
+module Style::FunctionalFashionsHelper
+end

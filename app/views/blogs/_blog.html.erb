@@ -1,0 +1,18 @@
+<div class="cover">
+  <div class="caption heading_b">
+    <h2>
+      <a href="<%= url_for blog %>" rel="tooltip" class="arrow_append" data-original-title="<%= blog.title %>">
+        <%= blog.title %>
+        <span class="arrow_r_after"></span>
+      </a>
+    </h2>
+    <p><%= sanitize strip_tags(truncate(blog.content, :length => 340)) %></p>
+    <a  class="">
+      <%= image_tag blog.blog_image(:trend_small) %>
+    </a>
+    <p class="blog_meta"> posted in
+      <span class="category">Blog</span>
+      <span class="date"> <%= blog.published_at.strftime("on %^b  %d  %I:%M%p")%></span>
+    </p>
+  </div>
+</div>

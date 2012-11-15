@@ -1,0 +1,50 @@
+  <div    id="main_section"   class="span8 ">
+    <section  id="show_page" class="trend_show">
+      <header   class="show_header">
+        <h1 class="">
+          <a href="#">
+            <%= @trend_spotting.title %>
+          </a>
+        </h1>
+      </header>
+      <p class="blog_meta">posted in
+        <a  class="transitionable category" href="#">
+          <span>TREND SPOTTING</span>
+        </a>
+        <span class="date"> on&nbsp;&nbsp;<%= trend_spotting.published_at.strftime("%^b  %d  %I:%M%p")%></span>
+      </p>
+      <div id="blocks"    class="">
+        <div class="mcol3 desc box">
+          <p><%= trend_spotting.description %></p>
+        </div>
+    <% @trend_spotting.photos.each do |photo| %>
+        <div class="mcol2 box">
+          <%= image_tag photo.photo(:trend_small) %>
+        </div>
+    <% end %>
+      </div>
+      <%= render "next_page", :obj => trend_spotting %>
+      <% if can? :manage, TrendSpotting %>
+          <div class="form-actions">
+            <%= link_to "Manage Photos", fashion_trend_spotting_photos_path(trend_spotting), class: "btn" %>
+            <%= link_to "Edit", edit_trend_spotting_path(trend_spotting), class: 'btn' %>
+            <%= link_to "Delete", trend_spotting, method: :delete, data:{confirm: "Are you sure?"}, class: "btn btn-danger" %>
+          </div>
+      <% end %>
+    </section>
+  </div>
+
+<%= content_for :javascript do %>
+    <script type="text/javascript">
+        var $container =  $('#blocks');
+        $container.imagesLoaded(function(){
+            $container.masonry({
+                itemSelector: '.box',
+                columnWidth: 100
+            });
+        });
+
+    </script>
+<% end %>
+
+

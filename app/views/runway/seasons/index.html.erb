@@ -1,0 +1,30 @@
+<section class="span8">
+  <header   class="show_header">
+    <h1 class="">
+      Manage seasons for runway collections
+    </h1>
+  </header>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Seasons</th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @runway_seasons.each do |s| %>
+    <tr>
+      <td>
+        <%= s.name %>
+      </td>
+      <td><%= link_to "Edit", edit_runway_season_path(s) %></td>
+      <td><%= link_to "Delete", s, :method => :delete, :confirm => "Are you sure" %></td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <div class="form-actions">
+    <%= link_to "Add a new season", new_runway_season_path, :class => "btn" %>
+  </div>
+</section>

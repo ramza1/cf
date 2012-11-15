@@ -1,0 +1,8 @@
+<li class="item span4">
+  <a href="<%= image_path photo.photo(:original) %>" class="thumbnail"  rel ="lightbox[roadtrip]<%= photo.photoable_id%>" title="<%= photo.caption %>">
+    <%= image_tag photo.photo(:trend_small), :alt => "", :class => "absolute-image" %>
+  </a>
+  <p  class="lnk_thmb">
+    <%= truncate photo.caption, :length => 23 %>
+  </p>
+</li>

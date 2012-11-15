@@ -1,0 +1,17 @@
+<%= simple_form_for @runway_collection, :html => {:class => "form-horizontal"} do |f| %>
+    <fieldset>
+      <%= f.input :name %>
+      <%= f.association :year  %>
+      <%= f.association :season %>
+      <%= f.input :published_at, as: :string %>
+      <%= f.input :collection_cover, as: :file  %>
+      <div class="form-actions">
+        <%= f.submit :class => "btn" %>
+        <% if @runway_collection.new_record? %>
+            <%= link_to "View all collections", runway_seasons_path, class: "btn" %>
+        <% else %>
+            <%= link_to "Cancel", @runway_collection, class: "btn" %>
+        <% end %>
+      </div>
+    </fieldset>
+<% end %>

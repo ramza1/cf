@@ -1,0 +1,18 @@
+<section  id="redcarpet" class="stamp span8">
+  <header   class="header_title">
+    <h1><a    href="#">RED CARPET REPORT</a></h1>
+  </header>
+  <%= render @redcarpets %>
+  <% if @redcarpets.next_page || @redcarpets.previous_page %>
+  <div class="pager" style="margin-top: 30px;">
+    <%= will_paginate @redcarpets %>
+  </div>
+  <% end %>
+
+
+  <% if can? :manage, Redcarpet %>
+      <div class="form-actions">
+        <%= link_to "Add new redcerpet", new_redcarpet_path, class: "btn" %>
+       </div>
+  <% end %>
+</section>

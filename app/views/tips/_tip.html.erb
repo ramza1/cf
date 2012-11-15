@@ -1,0 +1,18 @@
+<div class="cover">
+  <div class="caption heading_b">
+    <h2>
+      <a href="<%= url_for style_tip_path(tip) %>" rel="tooltip" class="arrow_append" data-original-title="<%= tip.title %>">
+        <%= tip.title %>
+        <span class="arrow_r_after"></span>
+      </a>
+    </h2>
+    <p><%= sanitize strip_tags(truncate(tip.body, :length => 340)) %></p>
+    <a  class="">
+      <%= image_tag tip.tip_image(:trend_small) %>
+    </a>
+    <p class="blog_meta"> posted in
+      <span class="category">Tips and Tutorial</span>
+      <span class="date"> <%= tip.published_at.strftime("on %^b  %d  %I:%M%p")%></span>
+    </p>
+  </div>
+</div>

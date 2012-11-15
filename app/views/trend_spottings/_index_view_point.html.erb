@@ -1,0 +1,31 @@
+<section   class="span8">
+  <header   class="header_title">
+    <h1><a>TREND SPOTTING</a></h1>
+  </header>
+  <div class="divider"></div>
+  <section  id="events" class="events">
+    <div id="trend_spotting" class="row-fluid">
+      <%= render :partial => "trend_spottings/trend_spotting", :collection => trend_spottings %>
+    </div>
+  <% if  trend_spottings.next_page || trend_spottings.previous_page %>
+    <div class="pager" style="margin-top: 30px;">
+      <%= will_paginate trend_spottings %>
+    </div>
+  <% end %>
+
+  </section>
+</section>
+
+<%= content_for :javascript do %>
+    <script type="text/javascript">
+        var $trendSpotting = $('#trend_spotting');
+        $trendSpotting.imagesLoaded(function(){
+            $trendSpotting.masonry({
+                itemSelector : '.trending_items',
+                columnWidth : function( containerWidth ) {
+                    return containerWidth / 3;
+                }
+            });
+        });
+    </script>
+<% end %>

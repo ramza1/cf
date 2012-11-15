@@ -1,0 +1,48 @@
+<section id="video" class="row-fluid">
+  <div class="span12  video_main">
+    <div  class="heading    caption heading_b">
+      <h1>CF VIDEOS</h1>
+    </div>
+    <div class="box col2">
+      <div class="row-fluid ">
+        <ul class="thumbnails span6 items row-fluid">
+          <% @videos.each do |video| %>
+          <% next if video == @videos.first %>
+          <li  class="span6">
+            <a href="<%= url_for video %>" class="thumbnail">
+              <%= image_tag video.screen_shot(:thumb) %>
+            </a>
+          </li>
+          <% end %>
+        </ul>
+        <div class="span6 ">
+          <header    class="caption heading_b">
+            <h2>
+              VIDEO OF THE WEEK
+            </h2>
+          </header>
+          <% @video = @videos.first %>
+          <div>
+            <a href="<%= url_for @video %>" class="thumbnail">
+              <%= image_tag @video.screen_shot(:large) %>
+            </a>
+          </div>
+          <header    class="caption heading_b">
+
+            <h1>
+              <a href="<%= url_for @video %>" rel="tooltip" class="arrow_append" data-original-title="<%= @video.title %>">
+                <%= @video.title %>
+                <span class="arrow_r_after"></span>
+              </a>
+            </h1>
+          </header>
+          <div  class="more">
+            <span>more from</span>
+            <a href="<%= url_for videos_path %>" class="more_link arrow_append">&nbsp;CF VIDEOS&nbsp;<span class="arrow_r_after"></span></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

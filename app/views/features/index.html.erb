@@ -1,0 +1,21 @@
+<section   class="span8">
+  <header   class="header_title">
+    <h1><a    href="#">FEATURES</a></h1>
+  </header>
+  <section  id="features" class="features">
+    <header class="heading">
+      <h1>COVER INTERVIEWS</h1>
+    </header>
+     <%= render @features %>
+  </section>
+  <% if @features.next_page || @features.previous_page %>
+  <div class="pager" style="margin-top: 30px;">
+    <%= will_paginate @features %>
+  </div>
+ <% end %>
+  <% if can? :manage, Feature %>
+      <div class="form-actions">
+        <%= link_to 'Add new featured story', new_feature_path, :class => "btn" %>
+       </div>
+  <% end %>
+</section>

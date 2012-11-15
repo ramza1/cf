@@ -1,0 +1,37 @@
+<section   class="span8">
+  <section  id="men_fashion" class="row-fluid ">
+    <header class="heading">
+      <h1>MEN FASHION</h1>
+    </header>
+    <div    class="box  col2">
+      <%= render :partial => "fashion/men_fashions/men_fashion", :collection => men_fashions%>
+    </div>
+  </section>
+
+ <% if men_fashions.next_page || men_fashions.previous_page %>
+  <div class="pager" style="margin-top: 30px;">
+    <%= will_paginate men_fashions %>
+  </div>
+ <% end %>
+  <% if can? :create, MenFashion %>
+      <div class="form-actions">
+        <%= link_to "Add a new men Fashion", new_men_fashion_path, class: "btn" %>
+      </div>
+  <% end %>
+
+
+</section>
+
+<%= content_for :javascript do %>
+    <script type="text/javascript">
+        var $containerTrend = $('.items');
+        $containerTrend.imagesLoaded(function(){
+            $containerTrend.masonry({
+                itemSelector : '.item',
+                columnWidth : function( containerWidth ) {
+                    return containerWidth / 2;
+                }
+            });
+        });
+    </script>
+<% end %>

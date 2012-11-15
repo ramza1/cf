@@ -1,0 +1,38 @@
+<section  id="fashion" class="row-fluid">
+  <div class="fashion_main">
+    <header class="heading  caption heading_b">
+      <h1>FASHION JURY</h1>
+    </header>
+    <div class="box">
+      <ul class="fashion-items items">
+        <% @fashion_juries.each do |fashion_jury| %>
+        <li class="span4">
+          <div class="polaroid">
+            <%= link_to image_tag(fashion_jury.fashion_jury_image(:small)), fashion_fashion_jury_path(fashion_jury, format: :js), :class => "imageLink", rel: "facebox" %>
+            <div class="stats">
+              <p><em class="s"></em><span class="saves"><%= fashion_jury.score %></span><em class="l">&nbsp;/&nbsp;</em><span class="likes">10</span> </p>
+            </div>
+            <div class="groups">
+              <p class="small one_line">
+                <%= fashion_jury.content %>
+              </p>
+              <%= link_to fashion_fashion_jury_path(fashion_jury, format: :js), :class => "comment_link block transitionable", rel: "facebox" do %>
+                  <i class="icon-white icon-comment"></i>
+                  <span class="comment_count"> Add </span>
+                  comments
+              <% end %>
+            </div>
+          </div>
+        </li>
+         <% end %>
+      </ul>
+      <div  class="more_box">
+
+        <div  class="more">
+          <span>more from</span>
+          <a href="<%= url_for fashion_fashion_juries_path %>"   rel="tooltip" title="Fashion Jury" class="more_link arrow_append">&nbsp;FASHION JURY&nbsp;<span class="arrow_r_after"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

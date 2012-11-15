@@ -1,0 +1,14 @@
+<section  id="men_fashion" class="row-fluid ">
+  <header class="heading">
+    <h1>MEN'S FASHION</h1>
+  </header>
+  <div    class="box  col2">
+  <%= render :partial => "fashion/men_fashions/men_fashion", :collection => @men_fashions %>
+  </div>
+  <div  class="more_box">
+    <div  class="more">
+      <span>more from</span>
+      <a href="<%= url_for fashion_men_fashions_path%>" class="more_link arrow_append">&nbsp;MEN'S FASHION&nbsp;<span class="arrow_r_after"></span></a>
+    </div>
+  </div>
+</section>

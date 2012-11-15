@@ -1,0 +1,12 @@
+<section class="span8">
+  <header   class="show_header">
+    <h2 class="">
+      Edit season for runway collection
+    </h2>
+  </header>
+
+  <%= render "form" %>
+  <p>
+    <%= link_to "Back", @runway_season %> | <%= link_to "Delete", @runway_season, :method => :delete, :confirm => "Are you sure" %>
+  </p>
+</section>

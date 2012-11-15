@@ -1,0 +1,17 @@
+<%= simple_form_for(@top_ad, :html => {:class => "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :url %>
+    <%#= f.input :position %>
+    <%= f.input :start_date, as: :string %>
+    <%= f.input :end_date, as: :string %>
+    <%= f.input :top_banner, as: :file %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

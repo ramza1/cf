@@ -1,0 +1,44 @@
+<section class="span8">
+   <div class="page-header" style="border-bottom: none;">
+     <h1>Manage top ads</h1>
+   </div>
+
+
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Url</th>
+    <th>Position</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @top_ads.each do |top_ad| %>
+  <tr>
+    <td><%= top_ad.name %></td>
+    <td><%= top_ad.url %></td>
+    <td><%= top_ad.position %></td>
+    <td>
+      <% if top_ad.out_of_date? %>
+          <b class="badge badge-warning">Inactive</b>
+      <% else %>
+          <b class="badge badge-success">Active</b>
+      <% end %>
+    </td>
+    <td><%= link_to 'Show', top_ad, class: "btn" %></td>
+    <td><%= link_to 'Edit', edit_top_ad_path(top_ad), class: "btn btn-info" %></td>
+    <td><%= link_to 'Destroy', top_ad, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<div class="form-actions">
+  <%= link_to 'New Top ad', new_top_ad_path, class: "btn" %>
+  <%= link_to "Create new right ad", new_right_ad_path, class: "btn" %>
+</div>
+
+</section>

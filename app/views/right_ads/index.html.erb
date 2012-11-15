@@ -1,0 +1,43 @@
+<section class="span8">
+  <div class="page-header" style="border-bottom: none;">
+    <h1>Manage right ads</h1>
+  </div>
+
+
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <th>Url</th>
+      <th>Position</th>
+      <th>Status</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+    <% @right_ads.each do |right_ad| %>
+        <tr>
+          <td><%= right_ad.name %></td>
+          <td><%= right_ad.url %></td>
+          <td><%= right_ad.position %></td>
+          <td>
+            <% if right_ad.out_of_date? %>
+               <b class="badge badge-warning">Inactive</b>
+            <% else %>
+                <b class="badge badge-success">Active</b>
+            <% end %>
+          </td>
+          <td><%= link_to 'Show', right_ad, class: "btn" %></td>
+          <td><%= link_to 'Edit', edit_right_ad_path(right_ad), class: "btn btn-info" %></td>
+          <td><%= link_to 'Destroy', right_ad, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+        </tr>
+    <% end %>
+  </table>
+
+  <br />
+ <div class="form-actions">
+   <%= link_to 'New Right ad', new_right_ad_path, class: "btn" %>
+ </div>
+
+</section>
+

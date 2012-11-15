@@ -1,0 +1,2 @@
+module Fashion::FashionJuriesHelper
+end

@@ -1,0 +1,64 @@
+<aside  id="aside" class="span4" style="margin-left: 19px;">
+  <section   id="social_connect">
+    <header class="heading_b">
+      <h2>CONNECT WITH CF</h2>
+    </header>
+    <ul class=" row-fluid">
+      <li class="facebok_ic  span2 si">
+        <a href="<%= FACEBOOK_URL %>" rel="tooltip" title="facebook" target="_blank"></a>
+      </li>
+      <li class="gplus_ic  span2 si">
+        <a href="<%= GPLUS_URL %>" rel="tooltip" title="gplus" target="_blank"></a>
+      </li>
+      <li class="twitter_ic  span2 si">
+        <a href="<%= TWITTER_URL %>" rel="tooltip" title="twitter" target="_blank">	</a>
+      </li>
+      <li class="pinterest_ic  span2 si">
+        <a>	</a>
+      </li>
+      <li class="tumblr_ic  span2 si">
+        <a></a>
+      </li>
+      <li class="email_ic  span2 si">
+        <a>	</a>
+      </li>
+    </ul>
+  </section>
+  <section id="advertisement">
+    <p class="ad">advertisement</p>
+    <%= render "right_ads" %>
+  </section>
+  <section id="subscribe">
+    <div class="subscription_header">
+      <h3>GET THE LATEST CF NEWS</h3>
+    </div>
+    <%= form_for Subscription.new, :remote => true, :html => {:class => "email_sub", :id => "new_subscription"} do |f| %>
+      <div class="controls">
+        <div class="input-prepend">
+          <%= f.email_field :email, :class => "span7", :style => "width: 211px;", :placeholder => "Email" %>
+          <button class="btn sub  btn-danger	pull-right" type="submit">subscribe</button>
+        </div>
+      </div>
+    <% end %>
+  </section>
+
+  <section  id="magazine">
+    <div    class="header_b">
+      <h1>IN THE MAGAZINE</h1>
+    </div>
+    <% mag = Magazine.published.last %>
+    <div  class="thumbnail">
+      <% if mag %>
+      <a href="<%= url_for mag %>" class="magazine">
+        <%= image_tag mag.mag_cover(:trend_small), :id => "magazine_banner" %>
+      </a>
+      <% end %>
+    </div>
+    <div  class="more_box" style="padding: 0; overflow: hidden;">
+      <div  class="more" style="padding: 0;">
+        <span>view our</span>
+        <a href="<%= url_for magazines_path %>" class="more_link arrow_append">&nbsp;Magazine collection&nbsp;<span class="arrow_r_after"></span></a>
+      </div>
+    </div>
+  </section>
+</aside>

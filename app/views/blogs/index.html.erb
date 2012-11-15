@@ -1,0 +1,22 @@
+<section   class="span8" style="margin-bottom: 30px">
+  <header   class="header_title">
+    <h1><a    href="#">BLOG</a></h1>
+  </header>
+  <div class="divider"></div>
+  <section  id="events" class="events ">
+    <div    class="cover_container ">
+      <%= render @blogs %>
+    </div>
+
+  </section>
+  <% if @blogs.next_page || @blogs.previous_page %>
+  <div class="pager" style="margin-top: 30px;">
+    <%= will_paginate @blogs %>
+  </div>
+ <% end %>
+  <% if can? :create, Blog %>
+      <div class="form-actions">
+        <%= link_to 'New blog', new_blog_path,  class: "btn" %>
+      </div>
+  <% end %>
+</section>

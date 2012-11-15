@@ -1,0 +1,134 @@
+.container {
+	display: block;
+	margin: 0px auto;
+}
+
+#iview3 {
+	display: block;
+	position: relative;
+	margin: 4px auto 40px 4px;
+	overflow: hidden;
+}
+
+#iview3 .iviewSlider {
+	display: block;
+	height: 500px;
+	overflow: hidden;
+}
+
+
+
+#iview3 div.iview-directionNav {
+	position: absolute;
+	top: 47%;
+	left: 0px;
+	z-index: 9;
+	width: 100%;
+}
+
+#iview3 div.iview-directionNav a {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	background-image: url(bg_direction_nav.png);
+	text-indent: -9999px;
+	-webkit-transition: left 0.3s ease-in-out;
+	-webkit-transition-property: left,right;
+	-moz-transition: left 0.3s ease-in-out;
+	-moz-transition-property: left,right;
+	-o-transition: left 0.3s ease-in-out;
+	-o-transition-property: left,right;
+	-ms-transition: left 0.3s ease-in-out;
+	-ms-transition-property: left,right;
+	transition: left 0.3s ease-in-out;
+	transition-property: left,right;
+}
+
+#iview3 div.iview-directionNav a.iview-nextNav {
+	right: -27px;
+	background-position: 27px 0px;
+}
+
+#iview3 div.iview-directionNav a.iview-prevNav {
+	left: -27px;
+	background-position: 0px 0px
+}
+
+#iview3.iview-hover div.iview-directionNav a.iview-nextNav {
+	right: 20px;
+}
+
+#iview3.iview-hover div.iview-directionNav a.iview-prevNav {
+	left: 20px;
+}
+
+.iview-caption {
+	background:rgba(255,255,255,0.8);
+	color: #000;
+	border-radius:0;
+    padding:0;
+	font-size: 12px;
+    max-height: 300;
+    cursor: pointer;
+}
+.iview-caption  h1{
+    font:normal 3.5em/1.3em OpenSansCondensedLight,sans-serif,'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+    padding: 10px 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.iview-caption  h1 a{
+    color:#000;
+    text-decoration: none;
+    cursor: pointer;
+    text-overflow:ellipsis;
+
+}
+.iview-caption  h1 a:hover{
+    color:#C21A1A;
+}
+.iview-caption  p{
+    border-top: 1px solid #fff;
+    color: #000;
+    padding: 10px 10px 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 16px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    text-overflow:ellipsis;
+}
+.iview-caption.caption1 {
+	box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 15px 0px;
+}
+
+.iview-caption.caption2 {
+	background: #FFF;
+	color: #000;
+	text-shadow: none;
+}
+
+.iview-caption.caption3 {
+	background: #c4302b;
+	box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
+	text-shadow: none;
+}
+
+#iview-preloader {
+	border: #666 1px solid;
+	width: 150px
+}
+
+#iview-preloader div {
+	background: #666;
+}
+#iview-timer {
+	border-radius: 10px;
+}
+
+#iview-timer div {
+	border-radius: 10px;
+}

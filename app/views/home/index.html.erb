@@ -1,0 +1,58 @@
+<section  id="main_content" class="span8">
+<section id="#featured" class="row-fluid  ">
+  <div class="span12 featured_main">
+    <div class="row-fluid col2  box">
+      <div class="span6">
+
+       <%= render "slide" %>
+      </div>
+      <div class="span6">
+        <%= render "blog" %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render "fashion" %>
+<%= render "style" %>
+
+<%= render "trend" %>
+
+<%= render "video" %>
+
+ <% if @redcarpet_photos.size >= 10 %>
+
+    <%= render "redcarpet" %>
+
+<% else %>
+
+<section id="red_carpet_moment" class="row-fluid">
+  <div  class="heading">
+    <h1><%= link_to @redcarpet.title, @redcarpet %></h1>
+  </div>
+  <div class="box ">
+    <% @rp.in_groups_of(4, false) do |row_cp| %>
+    <div class="row-fluid   col4">
+      <% row_cp.each do |cp| %>
+      <div class="span3">
+        <div class="thumbnail popdown" title="firstThis is The new complete fashion website" >
+          <a class=""><%= link_to image_tag(cp.photo(:thumb)), @redcarpet %></a>
+        </div>
+      </div>
+        <% end %>
+    </div>
+        <% unless row_cp == @redcarpet_photos.in_groups_of(4).last  %>
+            <div class="divider"></div>
+        <% end %>
+   <% end %>
+    <div  class="more_box">
+      <div  class="more">
+        <span>more from</span>
+        <a href="<%= url_for redcarpets_path %>" class="more_link arrow_append">&nbsp;RED CARPET MOMENTS&nbsp;<span class="arrow_r_after"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+ <% end %>
+</section>
+

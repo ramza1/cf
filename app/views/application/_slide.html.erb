@@ -1,0 +1,19 @@
+<% slides = Slide.published %>
+<div id="myCarousel2" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <% slides.each do |slide| %>
+    <div class="<% if slide == slides.first %>active <% end %>item"><%= image_tag slide.slide_image(:trend_small), style: "height: 453px; width: 302px;", alt: "" %>
+      <div class="carousel-caption"  data-y="100" data-transition="expandDown">
+        <h1><a  ><%= slide.title %>
+        </a></h1>
+        <p><%= slide.caption %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <!--
+  <a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+  -->
+</div>

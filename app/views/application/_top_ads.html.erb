@@ -1,0 +1,15 @@
+<%
+   top_ads = TopAd.running_ads
+%>
+
+<div id="myCarousel4" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <% top_ads.each do |top_ad| %>
+      <div class="<% if top_ad == top_ads.first %>active <% end%> item">
+        <%= link_to image_tag(top_ad.top_banner(:trend_small)), top_ad.url %>
+      </div>
+    <% end %>
+    <div class="item"><%= link_to image_tag("930_3.png"), "#" %></div>
+  </div>
+</div>

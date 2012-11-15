@@ -1,0 +1,27 @@
+<section id="redcarpet" class="stamp span8">
+  <div class="page-header">
+    <h1>OUR MAGAZINE</h1>
+  </div>
+
+  <% if @magazines.empty? %>
+      <p class="alert alert-info">
+        There are no magazines in our system at the moment
+      </p>
+  <% else %>
+      <div class="red_box row-fluid">
+        <ul  class="thmbs ">
+           <%= render @magazines %>
+        </ul>
+      </div>
+  <% end %>
+<br />
+  <div class="pager" style="margin-top: 30px;">
+    <%= will_paginate @magazines %>
+  </div>
+ <% if can? :manage, Magazine %>
+      <div class="form-actions">
+        <%= link_to 'New Magazine', new_magazine_path, class: "btn" %>
+      </div>
+ <% end  %>
+
+</section>

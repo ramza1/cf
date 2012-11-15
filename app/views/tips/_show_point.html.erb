@@ -1,0 +1,39 @@
+<section   class="trend_show span8">
+
+  <header   class="show_header">
+    <h1 class="">
+      <%= @tip.title %>
+    </h1>
+  </header>
+
+
+  <p class="blog_meta">posted in
+    <a  class="transitionable category" href="#">
+      <span>Tips and Tutorials</span>
+    </a>
+    <span class="date"> on&nbsp;&nbsp;<%= @tip.published_at.strftime("%^b  %d  %I:%M%p")%></span>
+  </p>
+  <div   class="media">
+    <div class="media-center row-fluid">
+      <%= image_tag @tip.tip_image(:trend_small), :alt => "" %>
+    </div>
+    <%= raw @tip.body %>
+  </div>
+  <ul class="comments">
+    <div class="fb-comments" data-href="<%= url_for @tip %>" data-num-posts="10" data-width="340"></div>
+
+  </ul>
+  <ul class="pager">
+    <%= content_tag :li, link_to("Next >", @tip.next), :class => "next" if !@tip.last_published? && @tip.next %>
+    <%= content_tag :li, link_to("< Prev", @tip.previous), :class => "previous" if @tip.previous %>
+  </ul>
+  <% if can? [:manage], @tip %>
+      <div class="form-actions">
+        <%= link_to 'Edit', edit_tip_path(@tip), class: "btn" %>
+        <%= link_to 'Back', tips_path, class: "btn" %>
+        <%= link_to "Delete", @tip, method: :delete, data: {confirm: "Are you sure"}, :class => "btn btn-danger" %>
+      </div>
+  <% end %>
+</section>
+
+

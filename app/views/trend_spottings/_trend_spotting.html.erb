@@ -1,0 +1,33 @@
+<%
+  #locals
+  @photos = trend_spotting.photos.limit(2)
+%>
+<div id="trend_spotting" class="row-fluid transitionable">
+  <div class="trending_items span4">
+    <div class="row-fluid">
+      <div class="trend_box">
+        <header class="">
+          <h1 class="">
+            <%= link_to  fashion_trend_spotting_path(trend_spotting), :rel => "tooltip", title: trend_spotting.title, class: "arrow_append" do %>
+                <%= trend_spotting.title %>
+                <span class="arrow_r_after"></span>
+            <% end %>
+          </h1>
+        </header>
+        <div class="item_grid ">
+          <ul  class="items row-fluid">
+            <% @photos.each do |photo| %>
+            <li	class="item span12">
+              <div  class="thumbnail tip_it_down" rel="tooltip" title="<%= photo.caption %>">
+                <%= image_tag photo.photo(:trend_small), :alt => "" %>
+              </div>
+            </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,12 @@
+<section class="span8">
+  <h1 class="page-header">
+    Manage Photos
+  </h1>
+  <div class="red_box row-fluid">
+  <ul class="photos thmbs row-fluid masonize">
+    <%= render :partial => "photos/photo", :collection => @photos %>
+  </ul>
+  </div>
+  <%= render "photo_form", :object => @runway_collection %>
+</section>
+

@@ -1,0 +1,14 @@
+<% right_ads = RightAd.running_ads %>
+
+
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <% right_ads.each do |right_ad| %>
+    <div class="<% if right_ad == right_ads.first %>active <% end %> item">
+      <%= link_to image_tag(right_ad.right_banner(:trend_small)), right_ad.url %></div>
+
+    <% end %>
+    <div class="item"><%= link_to image_tag("300x600_3.jpg"), "#" %></div>
+  </div>
+</div>

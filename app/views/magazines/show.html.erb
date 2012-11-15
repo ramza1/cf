@@ -1,0 +1,31 @@
+<section  id="trend_show" class="trend_show span8 ">
+
+  <header   class="heading">
+    <h1 class="light">
+      <%= @magazine.title %>
+    </h1>
+  </header>
+
+  <div   class="media">
+    <div class="span6 media_img_wrap" >
+
+      <div class="media-left">
+        <%= image_tag @magazine.mag_cover(:trend_small) %>
+      </div>
+    </div>
+    <p><%= @magazine.description %></p>
+  </div>
+  <div class="clearfix"></div>
+  <% if can? :manage, @magazine %>
+      <div class="form-actions">
+        <%= link_to 'Edit', edit_magazine_path(@magazine), :class => "btn" %>
+        <%= link_to 'Back', magazines_path, :class => "btn" %> <%= link_to "Delete", @magazine, :method => :delete,  :data => { :confirm => 'Are You sure' }, class: "btn btn-danger" %>
+      </div>
+  <% end %>
+  <%= render "next_page", :obj => @magazine %>
+</section>
+
+
+
+
+

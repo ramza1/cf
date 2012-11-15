@@ -1,0 +1,105 @@
+@import "bootstrap.css";
+body{
+    font:14px OpenSansRegular, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    line-height: 24px;
+}
+h1,h2,h3{
+    font-family: OpenSansCondensedBold, Helvetica, Arial, sans-serif;
+    font-weight:normal;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight:normal;
+}
+
+
+a:hover {
+    color: #C21A1A;
+    font-weight:normal;
+}
+// Set the correct sprite paths
+@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
+@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+// Note: If you use asset_path() here, your compiled boostrap_and_overrides.css will not
+//       have the proper paths. So for now we use the absolute path.
+@fontAwesomeEotPath: '/assets/fontawesome-webfont.eot';
+@fontAwesomeWoffPath: '/assets/fontawesome-webfont.woff';
+@fontAwesomeTtfPath: '/assets/fontawesome-webfont.ttf';
+@fontAwesomeSvgPath: '/assets/fontawesome-webfont.svg';
+
+// Font Awesome
+@import "fontawesome";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/less.html for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+
+.navbar .container {
+    width: 940px;
+}
+
+.thumbnail {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+.navbar .brand {
+    font-family: 'Conv_28194_ony_____',Sans-Serif;
+    text-align: left;
+    padding: 0px 0px 0px 5px;
+    margin-left: 0;
+    text-transform: uppercase;
+    font-size: 52px;
+    letter-spacing: 4px;
+    color: wheat;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    display: block;
+    height: 54px;
+    width: 310px;
+}
+
+#fashion_jury .row-fluid .span4, #trend_list .span4, #trend_list .span6, .masonize [class*="span"], #trend_list [class*="span"], .trending_items .span6, #trend_spotting .span4 {
+    margin: 0;
+}
+
+
+.form-horizontal .control-label {
+    float: left;
+    width: 150px;
+    padding-top: 5px;
+    text-align: right;
+}
+
+.form-horizontal .controls {
+    margin-left: 170px;
+}
+
+abbr[title] {
+    cursor: help;
+    border-bottom: none;
+    color: maroon;
+}
+
+
+

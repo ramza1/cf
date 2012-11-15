@@ -1,0 +1,14 @@
+<section class="span8">
+  <div class="page-header">
+    <header   class="show_header">
+      <h2 class="">
+        Enter a new runway collection
+      </h2>
+    </header>
+  </div>
+   <p class="alert alert-info">please ensure to create a <b><%= link_to "Year", new_runway_year_path %></b> and
+
+    <b><%= link_to "Season", new_runway_season_path %></b> before creating a new collection</p>
+
+  <%= render "form" %>
+</section>

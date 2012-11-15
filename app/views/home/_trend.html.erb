@@ -1,0 +1,69 @@
+<section id="trending_runway"  class="row-fluid">
+  <div class="box col2">
+    <div class="span6">
+      <div  class="heading  caption heading_b">
+        <h1>RUNWAY</h1>
+      </div>
+      <% @collection = @collections.first %>
+      <header   class="heading">
+        <h1>
+          <%= link_to @collection.name, @collection %>
+        </h1>
+      </header>
+      <div class="trending_featured">
+        <div class="trending_items tip_it_down"    rel="tooltip" title="<%= @collection.name %>">
+          <%= image_tag @collection.collection_cover(:trend_small) %>
+        </div>
+      </div>
+
+      <ul class="hot_items">
+        <% @collections.each do |collection| %>
+            <% next if collection == @collections.first %>
+        <li>
+          <a  href="<%= url_for collection %>"    class="arrow_append">
+            <%= collection.name %>
+            <span class="arrow_r_after"></span>
+          </a>
+        </li>
+      <% end %>
+      </ul>
+      <div  class="more_box">
+        <div  class="more">
+          <span>more from</span>
+          <a href="<%= url_for runway_path %>" class="more_link arrow_append">&nbsp;RUNWAY&nbsp;<span class="arrow_r_after"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="span6">
+      <div  class="heading    caption heading_b">
+        <h1>TREND SPOTTING</h1>
+      </div>
+      <div class="trending_items">
+        <div class="row-fluid">
+          <header   class="heading">
+            <h1>
+              <%= link_to @trend_spotting.title, fashion_trend_spotting_path(@trend_spotting) %>
+            </h1>
+          </header>
+        </div>
+        <div class="item_grid">
+          <ul  class="items row-fluid">
+            <% @photos.each do |photo| %>
+            <li	class="item span6">
+              <div  class="thumbnail tip_it_down" rel="tooltip" title="<%= photo.caption %>">
+                <%= link_to image_tag(photo.photo(:trend_small)), @trend_spotting %>
+              </div>
+            </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <div  class="more_box">
+        <div  class="more">
+          <span>more from</span>
+          <a href="<%= url_for fashion_trend_spottings_path %>" class="more_link arrow_append">&nbsp;TREND SPOTTING&nbsp;<span class="arrow_r_after"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

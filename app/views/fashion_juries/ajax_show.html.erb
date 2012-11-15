@@ -1,0 +1,44 @@
+<div class="content-header">
+</div>
+
+<div class="content-body">
+  <div class="row-fluid">
+    <div class="span4   tile" >
+      <div class="polaroid">
+        <a href="<%= image_path @fashion_jury.fashion_jury_image(:original) %>" class="imageLink" rel="lightbox">
+          <%= image_tag(@fashion_jury.fashion_jury_image(:small), :title => @fashion_jury.title, :alt => "") %>
+        </a>
+        <div class="stats">
+          <p><em class="s"></em><span class="saves"><%= @fashion_jury.score %></span><em class="l">&nbsp;/&nbsp;</em><span class="likes">10</span> </p>
+        </div>
+        <div class="groups">
+          <p>
+            <%= @fashion_jury.content %>
+          </p>
+          <%= link_to fashion_fashion_jury_path(@fashion_jury, format: :js), :class => "comment_link block transitionable", rel: "facebox" do %>
+              <i class="icon-white icon-comment"></i>
+              <span class="comment_count"> Add </span>
+              comments
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <ul class="comments">
+      <div class="fb-comments" data-href="<%= url_for @fashion_jury %>" data-num-posts="10" data-width="340"></div>
+
+    </ul>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <h3>
+    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div class="fb-like" data-send="false" data-layout="box_count" data-width="100" data-show-faces="false"></div>
+    <%= @fashion_jury.title %></h3>
+  <% if can? :manage, @fashion_jury %>
+        <%= link_to 'Edit', edit_fashion_jury_path(@fashion_jury), class: "btn" %>
+        <%= link_to 'Delete', @fashion_jury, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %>
+  <% end %>
+</div>

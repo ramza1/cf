@@ -1,0 +1,15 @@
+<%= search_form_for @search, :html => {:class => "form-horizontal selection"} do |f| %>
+    <div class="control-group">
+      <div class="span1 custom-select-wrapper" style="margin-left: 20px; width: 60px;">
+        <%= f.label :year_id_in, "YEAR", :class => "control-label" %>
+        <%= f.collection_select :year_id_in, @year, :id, :name %>
+      </div>
+      <div class="span3 custom-select-wrapper" style="width: 218px;">
+        <%= f.label :season_id_in, "SEASON", :class => "control-label" %>
+        <%= f.collection_select :season_id_in, Runway::Season.all, :id, :name %>
+      </div>
+      <div class="span1">
+        <%= f.submit "Show", :class => "btn showOp no_radius" %>
+      </div>
+    </div>
+<% end %>

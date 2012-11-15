@@ -1,0 +1,14 @@
+<%= simple_form_for(@tip) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title, input_html: {class: "span9"} %>
+    <%= f.input :body, :as => :ckeditor, :label => false, :input_html => { :toolbar => 'Full' } %>
+    <%= f.input :tip_image, :as => :file, :label => "Upload Image" %>
+    <%= f.input :published_at, as: :string %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

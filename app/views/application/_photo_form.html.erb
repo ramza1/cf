@@ -1,0 +1,24 @@
+<%= form_for([object, object.photos.new], :remote => true, :html => {:id => "new_photo", :class => "form-horizontal"}) do |f| %>
+    <fieldset>
+    <legend>Add Photo</legend>
+    <div class="control-group">
+      <label class="control-label" for="input01"><%= f.label :caption %></label>
+      <div class="controls">
+        <%= f.text_area :caption, :rows => 3, :class => "input-xlarge" %>
+
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="input01"><%= f.label :photo, "select a photo" %></label>
+      <div class="controls">
+         <%= f.file_field :photo %>
+      </div>
+    </div>
+      <div class="form-actions">
+        <button type="submit" data-disable-with="uploading please wait" class="btn">
+          Upload photo
+        </button>
+      </div>
+</fieldset>
+
+<% end %>

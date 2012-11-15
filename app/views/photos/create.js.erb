@@ -1,0 +1,7 @@
+
+var li = $("<%= j(render :partial => "photos/photo", :locals => {:photo => @photo}) %>").hide();
+$('.photos').append(li);
+li.fadeIn('slow');
+$('#new_photo')[0].reset();
+alert("photo uploaded")
+$('#photoModal').modal('hide')

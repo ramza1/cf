@@ -1,0 +1,68 @@
+<section   class="span8">
+  <header   class="header_title">
+    <h1><a    href="#">RUNWAY</a></h1>
+  </header>
+  <section  id="runway" class="runway">
+    <%= render :partial => "runway/search_form" %>
+
+
+    <div class="runway_wrap row-fluid">
+      <div class="span2 collections"    style="display: none;">
+        <header class="heading">
+          <h2>
+            COLLECTIONS
+          </h2>
+        </header>
+        <div  class="collections_body">
+          <ul>
+
+          </ul>
+        </div>
+      </div>
+      <div class="collection">
+        <div  class="row-fluid">
+          <div class="span4">
+            <header   class="heading">
+              <h2>
+                COLLECTIONS
+              </h2>
+            </header>
+            <div id="collections_el">
+
+              <ul id="collection_nav"class="nav nav-list">
+                <li class="active">
+                  <%= link_to @runway_collection.name, @runway_collection %>
+                </li>
+                <% @runway_collections.each do |collection| %>
+                    <% next if collection == @runway_collection %>
+                    <li>
+                      <%= link_to collection.name, collection %>
+                    </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+          <div  id="collection_body" class="collection_body es-carousel-wrapper span8">
+            <div class="es-carousel">
+              <ul>
+                <% if @runway_collection.photos.empty? %>
+                    <li><%= image_tag @runway_collection.collection_cover(:trend_small)%></li>
+                    <% else %>
+                <%= render :partial => "runway/collections/photos", :collection => @runway_collection.photos, :as => :photo %>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <% if can? :manage, :collection %>
+  <div class="form-actions">
+    <%= link_to "Manage photos", runway_collection_photos_path(@runway_collection), :class => "btn" %>
+    <%= link_to "Edit", edit_runway_collection_path(@runway_collection), :class => "btn" %>
+    <%= link_to "Delete", @runway_collection, method: :delete, data: {confirm: "Are you sure"}, class: "btn btn-danger" %>
+  </div>
+ <%- end -%>
+
+</section>

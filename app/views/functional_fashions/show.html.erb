@@ -1,0 +1,36 @@
+<section class="span8">
+  <div class="page-header">
+    <h1><span>
+      <%= image_tag @functional_fashion.functional_fashion_designer.icon(:trend_small), :class => "avatar" %>
+    </span>
+      <%= @functional_fashion.functional_fashion_designer.name %></h1>
+  </div>
+  <div class="media-center row-fluid">
+    <%= image_tag @functional_fashion.functional_fashion_image(:original) %>
+  </div>
+  <p>
+    <%= @functional_fashion.content %>
+  </p>
+
+  <% if can? :manage, @functional_fashion %>
+      <div class="form-actions">
+        <%= link_to 'Edit', edit_functional_fashion_path(@functional_fashion), class: "btn" %>
+        <%= link_to 'Delete', @functional_fashion, method: :delete, date: {confirm: "Are you sure"}, class: "btn btn-danger" %>
+      </div>
+  <% end %>
+
+
+  <section style="margin-top: 30px;">
+    <section  id="fashion_jury">
+      <header class="heading">
+        <h1>MORE FUNCTIONAL FASHION BY <%= @functional_fashion.functional_fashion_designer.name %></h1>
+      </header>
+      <div class="row-fluid  jury_polaroid  ">
+        <%= render @functional_fashion.functional_fashion_designer.functional_fashions.accessible_by(current_ability).recent %>
+      </div>
+    </section>
+  </section>
+</section>
+
+
+

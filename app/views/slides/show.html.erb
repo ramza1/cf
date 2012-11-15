@@ -1,0 +1,18 @@
+<section class="span8">
+
+<p>
+  <b>Caption:</b>
+  <%= @slide.caption %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @slide.url %>
+</p>
+
+<%= image_tag @slide.slide_image(:trend_small) %>  
+
+<%= link_to 'Edit', edit_slide_path(@slide) %> |
+<%= link_to 'Back', slides_path %>
+
+</section>    

@@ -1,0 +1,16 @@
+<section   class="span8">
+  <header   class="heading">
+    <h1><a    href="#">LOOK BOOK</a></h1>
+  </header>
+  <section  id="lookbook" class="stamp">
+
+    <%= render :partial => "look_books/look_book", :collection => look_books %>
+
+  </section>
+  <% if look_books.next_page || look_books.previous_page %>
+  <div class="pager" style="margin-top: 30px;">
+    <%= will_paginate look_books %>
+  </div>
+  <% end %>
+
+</section>

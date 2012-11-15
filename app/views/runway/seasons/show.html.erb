@@ -1,0 +1,8 @@
+<section class="span8">
+  <p>
+    <b>season:</b> <%= @runway_season.name %>
+  </p>
+  <div>
+    <%= link_to "Edit", edit_runway_season_path(@runway_season) %>  | <%= link_to "Delete", @runway_season, :method => :delete, :confirm => "Are you sure" %>
+  </div>
+</section>

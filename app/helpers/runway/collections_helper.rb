@@ -1,0 +1,2 @@
+module Runway::CollectionsHelper
+end

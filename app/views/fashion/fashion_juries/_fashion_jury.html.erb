@@ -1,0 +1,21 @@
+<div class="span4   tile" >
+  <div class="polaroid">
+    <a href="<%= url_for fashion_fashion_jury_path(fashion_jury, :format => :js) %>" class="imageLink" rel="facebox">
+      <%= image_tag(fashion_jury.fashion_jury_image(:small), :title => fashion_jury.title, :alt => "") %>
+    </a>
+    <div class="stats">
+      <p><em class="s"></em><span class="saves"><%= fashion_jury.score %></span><em class="l">&nbsp;/&nbsp;</em><span class="likes">10</span> </p>
+    </div>
+    <div class="groups">
+      <p class="small"><%= fashion_jury.content %></p>
+      <%= link_to fashion_fashion_jury_path(fashion_jury, :format => :js), remote: true, rel: "facebox", class: "comment_link block transitionable" do %>
+          <i class="icon-white icon-comment"></i> <%= raw custom_pluralizer(fashion_jury.comments_count) %>
+      <% end  %>
+    </div>
+  </div>
+</div>
+
+
+
+
+

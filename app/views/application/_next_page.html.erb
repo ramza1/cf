@@ -1,0 +1,4 @@
+<ul class="pager">
+  <%= content_tag :li, link_to("Next >", obj.next), :class => "next" if !obj.last_published? && obj.next %>
+  <%= content_tag :li, link_to("< Prev", obj.previous), :class => "previous" if obj.previous  %>
+</ul>

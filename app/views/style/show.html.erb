@@ -1,0 +1,37 @@
+<section   class="span8">
+  <header   class="header_title">
+    <h1><a    href="#">STYLES</a></h1>
+  </header>
+  <section  id="fashion_jury">
+    <header class="heading">
+      <h1>STYLE DIARY</h1>
+    </header>
+    <div class="row-fluid  jury_polaroid  ">
+      <%= render :partial => "style/functional_fashions/functional_fashion", :collection => @functional_fashion %>
+
+    </div>
+    <div  class="more_box">
+      <div  class="more">
+        <span>more from</span>
+        <a href="<%= url_for style_functional_fashions_path %>" class="more_link arrow_append">&nbsp;Functional Fashion&nbsp;<span class="arrow_r_after"></span></a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+  <section  id="lookbook" class="stamp">
+    <header   class="heading">
+      <h1><a    href="#">LOOK BOOK</a></h1>
+    </header>
+    <%= render @look_books %>
+
+    <div  class="more_box">
+      <div  class="more">
+        <span>more from</span>
+        <a href="<%= url_for style_look_books_path %>" class="more_link arrow_append">&nbsp;Look Book&nbsp;<span class="arrow_r_after"></span></a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+
+
+</section>

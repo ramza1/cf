@@ -1,0 +1,71 @@
+<section   class="span8">
+  <header   class="header_title">
+    <h1><a    href="#">RUNWAY</a></h1>
+  </header>
+  <section  id="runway" class="runway">
+    <%= search_form_for @search, :html => {:class => "form-horizontal selection"} do |f| %>
+        <div class="control-group">
+          <div class="span2 custom-select-wrapper">
+              <%= f.label :year_id_in, "YEAR", :class => "control-label" %>
+              <%= f.collection_select :year_id_in, @year, :id, :name %>
+          </div>
+          <div class="span3 custom-select-wrapper">
+            <%= f.label :season_id_in, "SEASON", :class => "control-label" %>
+            <%= f.collection_select :season_id_in, Runway::Season.all, :id, :name %>
+          </div>
+          <div class="span1">
+            <%= f.submit "Show", :class => "btn showOp no_radius" %>
+          </div>
+         </div>
+    <% end %>
+
+
+    <div class="runway_wrap row-fluid">
+      <div class="span2 collections"    style="display: none;">
+        <header class="heading">
+          <h2>
+            COLLECTIONS
+          </h2>
+        </header>
+        <div  class="collections_body">
+          <ul>
+
+          </ul>
+        </div>
+      </div>
+      <div class="collection">
+        <div  class="row-fluid">
+          <div class="span4">
+            <header   class="heading">
+              <h2>
+                COLLECTIONS
+              </h2>
+            </header>
+            <div id="collections_el">
+
+              <ul id="collection_nav"class="nav nav-list">
+                <% @runway_collections.each do |collection| %>
+                    <li class="<% if collection == @runway_collections.first %>active<% end %>">
+                      <%= link_to collection.name, collection %>
+                    </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+          <div  id="collection_body" class="collection_body es-carousel-wrapper span8">
+            <div class="es-carousel">
+              <ul>
+                <% if @first_group.empty? %>
+                    <%= image_tag("missing_large.png") %>
+                <% else %>
+                <%= render :partial => "runway/collections/photos", :collection => @first_group, :as => :photo %>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>

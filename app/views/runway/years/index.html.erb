@@ -1,0 +1,30 @@
+<section class="span8">
+  <header   class="show_header">
+    <h1 class="">
+      Manage Years for runway collections
+    </h1>
+  </header>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Years</th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @runway_years.each do |year| %>
+    <tr>
+      <td>
+        <%= year.name %>
+      </td>
+      <td><%= link_to "Edit", edit_runway_year_path(year) %></td>
+      <td><%= link_to "Delete", year, :method => :delete, :confirm => "Are you sure" %></td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <div class="form-actions">
+    <%= link_to "Add a new year", new_runway_year_path, :class => "btn" %>
+  </div>
+</section>

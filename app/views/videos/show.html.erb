@@ -1,0 +1,35 @@
+<section class="span8">
+  <ul class="pager">
+    <%= content_tag :li, link_to("Next >", @video.next), :class => "next" if !@video.last_published? && @video.next %>
+    <%= content_tag :li, link_to("< Prev", @video.previous), :class => "previous" if @video.previous %>
+  </ul>
+  <div class="page-header">
+    <h1><%= @video.title %></h1>
+  </div>
+<% if @video.youtube_video_id.present? %>
+      <iframe class="youtube-player" type="text/html" width="100%" height="264" src="http://www.youtube.com/embed/<%= @video.youtube_video_id %>" frameborder="0">
+      </iframe>
+<% else %>
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="500px" height="264"
+         poster="<%= @video.screen_shot(:trend_small) %>"
+         data-setup="{}">
+    <source src="<%= @video.mp4.url %>" type='video/mp4' />
+    <track kind="captions" src="" srclang="en" label="English" />
+  </video>
+<% end %>
+  <div   class="media">
+    <%= raw @video.description %>
+  </div>
+  <% if can? [:manage], @video %>
+      <div class="form-actions">
+        <%= link_to 'Edit', edit_video_path(@video), class: "btn" %>
+        <%= link_to 'Back', videos_path, class: "btn" %>
+        <%= link_to "Delete", @video, method: :delete, data: {confirm: "Are you sure"}, :class => "btn btn-danger" %>
+      </div>
+  <% end %>
+
+</section>
+
+
+
+

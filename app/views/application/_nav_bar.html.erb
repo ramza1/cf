@@ -1,0 +1,81 @@
+<div class="navbar">
+  <div class="menu_aux">
+    <div class="container  menu_wrap">
+      <div  class="top_banner">
+          <%= render "top_ads" %>
+      </div>
+      <div class="menu_main">
+        <a  class="brand pull-left">
+          <h1 class="brand"><span class="title-a">COMPLETE</span>FASHION</h1>
+        </a>
+
+        <ul class="nav   pull-right">
+          <% if current_user  %>
+              <li><%= link_to "Hi #{current_user.name}", "#" %></li>
+              <li class="divider-vertical"></li>
+              <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+          <% else %>
+          <li><%= link_to "Join free", new_user_registration_path %></li>
+          <li class="divider-vertical"></li>
+          <li><%= link_to "Login with facebook", user_omniauth_authorize_path(:facebook) %></li>
+              <li class="divider-vertical"></li>
+          <li><%= link_to "Login with Twitter", user_omniauth_authorize_path(:twitter) %></li>
+          <li class="divider-vertical"></li>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
+          <% end %>
+        </ul>
+        <div    class="nav btn_nav  pull-right">
+          <a href="#subscribe" class="btn btn-danger ">
+            subscribe</a>
+          <%= image_tag current_user.image, class: "auth-image" if current_user && current_user.image.present? %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container menu-main menu_wrap" align="center">
+    <ul class="nav nav-collapse menu" >
+      <li class=""><a href="<%= url_for root_url %>">
+        <i  class="icon-home  "></i>
+        Home</a></li>
+      <li class="divider-vertical"></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">FASHION<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><%= link_to_unless_current "FASHION", fashion_path %></li>
+          <li class="divider"></li>
+          <li><%= link_to_unless_current "FASHION JURY", fashion_fashion_juries_path %></li>
+          <li><%= link_to_unless_current "RUNWAY", runway_path %></li>
+          <li><%= link_to_unless_current "MEN'S FASHION", fashion_men_fashions_path %></li>
+          <li><%= link_to_unless_current "TREND SPOTTING", fashion_trend_spottings_path %></li>
+        </ul>
+      </li>
+      <li class="divider-vertical"></li>
+      <li><%= link_to "FEATURES", features_path %></li>
+      <li class="divider-vertical"></li>
+      <li class=""><%= link_to "RED CARPET MOMENTS", redcarpets_path %></li>
+      <li class="divider-vertical"></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown"href="#mdo">STYLES<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><%= link_to_unless_current "STYLE", styles_path %></li>
+          <li class="divider"></li>
+          <li><%= link_to_unless_current "STYLE DIARY", style_functional_fashions_path %></li>
+          <li><%= link_to_unless_current "LOOKBOOK", style_look_books_path %></li>
+          <li><%= link_to_unless_current "TIPS AND TUTORIALS", style_tips_path %></li>
+        </ul>
+      </li>
+      <li class="divider-vertical"></li>
+      <li class=""><%= link_to "BLOG", blogs_path %></li>
+      <li class="divider-vertical"></li>
+      <% if can? :manage, :all %>
+         <%= render "admin_settings" %>
+      <% end %>
+    </ul>
+    <%= form_for search_path, :url => search_path, :method => :get, :html => {:class => "navbar-search pull-right"} do %>
+        <div class="input-prepend">
+          <span class="add-on"><i class="icon-search" style="color: #fff; text-shadow: none;"></i></span>
+           <%= text_field_tag :q, @q, :placeholder => "Search", :class => "search-query span2" %>
+        </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<section   class="span8">
+  <header   class="header_title">
+    <h1>VIDEOS</h1>
+  </header>
+  <div class="divider"></div>
+  <section  id="events" class="events ">
+    <div    class="cover_container ">
+      <%= render @videos %>
+    </div>
+
+  </section>
+
+  <div class="pager" style="margin-top: 30px;">
+    <%= will_paginate @videos %>
+  </div>
+
+  <% if can? :create, :videos %>
+  <div class="form-actions">
+    <%= link_to "Add video", new_video_path, class: "btn" %>
+  </div>
+ <% end %>
+</section>

@@ -1,0 +1,22 @@
+<section   class="span8" style="margin-bottom: 30px">
+  <header   class="header_title">
+    <h1><a    href="#">TIPS AND TUTORIALS</a></h1>
+  </header>
+  <div class="divider"></div>
+  <section  id="events" class="events ">
+    <div    class="cover_container ">
+      <%= render :partial => "tips/tip", :collection => @tips %>
+    </div>
+
+  </section>
+  <% if @tips.next_page || @tips.previous_page %>
+      <div class="pager" style="margin-top: 30px;">
+        <%= will_paginate @tips %>
+      </div>
+  <% end %>
+  <% if can? :create, Tip %>
+      <div class="form-actions">
+        <%= link_to 'New tips and tutorial', new_tip_path,  class: "btn" %>
+      </div>
+  <% end %>
+</section>

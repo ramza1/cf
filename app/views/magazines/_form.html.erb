@@ -1,0 +1,14 @@
+<%= simple_form_for(@magazine, html: {class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title %>
+    <%= f.input :published_at, as: :string %>
+    <%= f.input :description, input_html: {:rows => 7, class: "span8"} %>
+    <%= f.input :mag_cover, as: :file %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

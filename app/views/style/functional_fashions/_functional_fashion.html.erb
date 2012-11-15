@@ -1,0 +1,25 @@
+<div class="span4   tile" >
+  <div class="polaroid style transitionable">
+    <div class="user_meta">
+      <a href="<%= url_for functional_fashion.functional_fashion_designer %>" style="display: block;"><%= image_tag functional_fashion.functional_fashion_designer.icon(:trend_small), :class => "avatar", :alt => "" %>
+        <div class="block">
+         <%= functional_fashion.functional_fashion_designer.name %>
+        </div>
+      </a>
+    </div>
+    <div class="divider"></div>
+
+    <a href="<%= url_for style_functional_fashion_path(functional_fashion) %>" class="imageLink">
+     <%= image_tag(functional_fashion.functional_fashion_image(:trend_small), :alt => "") %>
+    </a>
+    <div class="divider_b"></div>
+    <p class="quote">
+      <%= functional_fashion.content %>  <br/>
+      <% if can? :manage, functional_fashion %>
+          <%= link_to "Edit", edit_functional_fashion_path(functional_fashion), class: "btn" %>
+          <%= link_to "Delete", functional_fashion, method: :delete, data: {cornfirm: "Are you sure"}, class: "btn btn-danger"  %>
+      <% end %>
+    </p>
+  </div>
+
+</div>

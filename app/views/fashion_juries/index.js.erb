@@ -1,0 +1,7 @@
+$('#fashion_jurys').append('<%= j render :partial => "fashion/fashion_juries/fashion_jury", :collection => @fashion_juries %>')
+<% if @fashion_juries.next_page%>
+$('.pagination').replaceWith('<%= will_paginate(@fashion_juries) %>')
+<% else %>
+$('.pagination').remove()
+<% end %>
+

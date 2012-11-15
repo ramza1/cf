@@ -1,0 +1,16 @@
+class RightAd < ActiveRecord::Base
+  attr_accessible :name, :position, :url, :right_banner, :start_date, :end_date
+  validates :name, :url, :right_banner, :presence => true
+
+  has_attached_file :right_banner, :styles => {:trend_small => "300x600#", :original => "800x800>"}
+  validates_attachment_presence :right_banner
+  validates_attachment_content_type :right_banner, :content_type => ['image/jpeg', 'image/png', 'image/gif']
+  validates_attachment_presence :right_banner
+
+  scope :running_ads, lambda { where('end_date > ? AND start_date <= ?', Time.now.utc, Time.now.utc) }
+  scope :unpublished, lambda { where('published_at > ?', Time.now.utc) }
+
+  def out_of_date?
+    end_date <= Time.zone.now
+  end
+end

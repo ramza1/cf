@@ -1,0 +1,41 @@
+<section  id="trend_show" class="trend_show span8 ">
+  <%= render "next_page", :obj => @men_fashion %>
+  <header   class="heading">
+    <div class="page-header">
+      <h1 class="light">
+        <%= @men_fashion.title %>
+      </h1>
+    </div>
+
+  </header>
+
+  <div id="blocks"    class="">
+    <div class="mcol3 desc box">
+      <p><%= @men_fashion.content %></p></div>
+    <%= render :partial => "men_fashions/photos", :collection => @photos, :as => :photo %>
+  </div>
+ <% if can? :manage, MenFashion %>
+      <div class="form-actions">
+        <%= link_to "Manage Photos", men_fashion_photos_path(@men_fashion), class: "btn" %>
+        <%= link_to 'Edit', edit_men_fashion_path(@men_fashion), class: "btn" %>
+        <%= link_to 'Delete', @men_fashion, method: :delete, data: {confirm: "Are you sure"}, class: "btn btn-danger" %>
+      </div>
+ <% end %>
+</section>
+<%= content_for :javascript do %>
+    <script type="text/javascript">
+        var $container =  $('#blocks');
+        $container.imagesLoaded(function(){
+            $container.masonry({
+                itemSelector: '.box',
+                columnWidth: 100
+            });
+        });
+
+    </script>
+<% end %>
+
+
+
+
+

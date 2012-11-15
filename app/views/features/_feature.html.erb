@@ -1,0 +1,36 @@
+<div    class="row_l    ">
+  <div class="span6 cover">
+    <div>
+      <%= image_tag feature.feature_image(:small), :alt => "" %>
+    </div>
+  </div>
+  <div    class="span6">
+    <div class="caption">
+      <h1>
+        <a href="<%= url_for feature %>"  rel="tooltip" title="<%= feature.title %>"  class="arrow_append">
+
+          <%= feature.title %>
+          <span class="arrow_r_after"></span>
+        </a>
+      </h1>
+      <figure class="quote_b">
+        <blockquote class="curly-quotes">
+          <%= feature.quote %>
+        </blockquote>
+        <% if feature.quote_owner.present? %>
+        <figcaption class="quote-by">— <%= feature.quote_owner %></figcaption>
+        <% end %>
+      </figure>
+      <p>
+        <%= strip_tags(truncate feature.content, :length => 220) %>
+      </p>
+      <div  class="more_box">
+        <div  class="more">
+          <span>read</span>
+          <a href="<%= url_for feature %>" class="more_link arrow_append">&nbsp;MORE&nbsp;<span class="arrow_r_after"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div    class="divider"></div>

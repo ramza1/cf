@@ -1,0 +1,26 @@
+<%
+   #locals
+   @photos = men_fashion.photos.limit(6)
+%>
+<div class="span6">
+  <div class="trending_items">
+    <div class="row-fluid">
+      <header   class="heading  article">
+        <h1>
+          <%= link_to men_fashion.title, fashion_men_fashion_path(men_fashion) %>
+        </h1>
+      </header>
+    </div>
+    <div class="item_grid">
+      <ul  class="items row-fluid">
+        <% @photos.each do |photo| %>
+        <li	class="item span6">
+          <div  class="thumbnail tip_it_down" rel="tooltip" title="<% photo.caption %>">
+            <%= image_tag photo.photo(:trend_small), :alt => "" %>
+          </div>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

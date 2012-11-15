@@ -1,0 +1,9 @@
+<%= simple_form_for(@blog, :html => {:class => "form-horizontal"}) do |f| %>
+ <%= f.input :title, input_html: {class: "span9"} %>
+    <%= f.input :content, :as => :ckeditor, :label => false, :input_html => { :toolbar => 'Full' } %>
+  <%= f.input :blog_image, :as => :file, :label => "Upload Image" %>
+  <%= f.input :published_at, as: :string %>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

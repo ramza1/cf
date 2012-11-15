@@ -1,0 +1,25 @@
+
+<section class="span8">
+  <p>
+    <b>Name:</b>
+    <%= @top_ad.name %>
+  </p>
+
+  <p>
+    <b>Url:</b>
+    <%= link_to @top_ad.url, @top_ad.url %>
+  </p>
+
+  <p>
+    <b>Position:</b>
+    <%= @top_ad.position %>
+  </p>
+
+
+
+  <%= image_tag @top_ad.top_banner(:trend_small) %>
+
+  <%= link_to 'Edit', edit_top_ad_path(@top_ad) %> |
+  <%= link_to 'Back', top_ads_path %>
+</section>
+

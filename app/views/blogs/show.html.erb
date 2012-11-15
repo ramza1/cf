@@ -1,0 +1,63 @@
+<section   class="trend_show span8">
+
+    <header   class="show_header">
+      <h1 class="">
+        <%= @blog.title %>
+      </h1>
+    </header>
+
+
+  <p class="blog_meta">posted in
+    <a  class="transitionable category" href="#">
+      <span>Blog</span>
+    </a>
+    <span class="date"> on&nbsp;&nbsp;<%= @blog.published_at.strftime("%^b  %d  %I:%M%p")%></span>
+  </p>
+  <div   class="media">
+    <div class="media-center row-fluid">
+      <%= image_tag @blog.blog_image(:trend_small), :alt => "" %>
+    </div>
+       <%= raw @blog.content %>
+  </div>
+
+  <ul class="comments">
+    <div class="fb-comments" data-href="<%= url_for @blog %>" data-num-posts="10" data-width="340"></div>
+
+  </ul>
+  <ul class="pager">
+    <%= content_tag :li, link_to("Next >", @blog.next), :class => "next" if !@blog.last_published? && @blog.next %>
+    <%= content_tag :li, link_to("< Prev", @blog.previous), :class => "previous" if @blog.previous %>
+  </ul>
+  <% if can? [:manage], @blog %>
+  <div class="form-actions">
+    <%= link_to 'Edit', edit_blog_path(@blog), class: "btn" %>
+    <%= link_to 'Back', blogs_path, class: "btn" %>
+    <%= link_to "Delete", @blog, method: :delete, data: {confirm: "Are you sure"}, :class => "btn btn-danger" %>
+  </div>
+  <% end %>
+  <section    id="related">
+    <header  class="heading_b">
+      <h1>Related</h1>
+    </header>
+    <div   class="related col3 row-fluid">
+      <% @similar_stories.each do |blog| %>
+         <div class="cover   span4">
+        <div class="caption heading_b">
+          <h2>
+            <a href="<%= url_for blog %>" rel="tooltip" class="arrow_append" data-original-title="<%= blog.title %>">
+              <%= blog.title %>
+              <span class="arrow_r_after"></span>
+            </a>
+          </h2>
+          <p><%=  strip_tags(truncate(blog.content, :length => 100)) %></p>
+          <a class="thumb" >
+            <%= image_tag blog.blog_image(:trend_small), :alt => "" %>
+          </a>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </section>
+</section>
+
+

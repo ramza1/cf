@@ -1,0 +1,40 @@
+<%= javascript_include_tag "application" %>
+<script type="text/javascript">
+
+    $('.carousel').carousel({
+        interval: 10000
+    })
+    $('#magazine_banner').adipoli({
+        'startEffect' : 'normal',
+        'hoverEffect' : 'popout'
+    });
+    $('.tip_it_down').tooltip({placement:"bottom"})
+    $('a,.tip_it').tooltip()
+    $('.popdown').popover({placement:'bottom'})
+    $('.popup').popover({placement:'top'})
+
+
+    $('select').selectmenu();
+    $(document).ready(function(){
+        $('#collection_body').elastislide({
+            imageW 		: 300,
+            minItems	: 1,
+            margin		: 2,
+            border		: 1,
+            current		: 0
+        });
+       $('#collections_el').addScrollExtension();
+
+    });
+
+    var $container = $('.jury_polaroid');
+    $container.imagesLoaded(function(){
+        $container.masonry({
+            itemSelector : '.tile',
+            columnWidth : function( containerWidth ) {
+                return containerWidth / 3;
+            }
+        });
+    });
+
+</script>

@@ -1,0 +1,2 @@
+module Runway::SeasonsHelper
+end

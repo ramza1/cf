@@ -1,0 +1,22 @@
+<section class="span8">
+  <p>
+    <b>Name:</b>
+    <%= @right_ad.name %>
+  </p>
+
+  <p>
+    <b>Url:</b>
+    <%= @right_ad.url %>
+  </p>
+
+  <p>
+    <b>Position:</b>
+    <%= @right_ad.position %>
+  </p>
+
+  <%= image_tag @right_ad.right_banner(:trend_small) %>
+
+  <%= link_to 'Edit', edit_right_ad_path(@right_ad) %> |
+  <%= link_to 'Back', right_ads_path %>
+</section>
+

@@ -1,0 +1,19 @@
+<section  id="fashion_jury">
+  <header class="heading">
+    <h1>FASHION JURY</h1>
+  </header>
+  <div class="row-fluid  jury_polaroid">
+  <%= render :partial => "fashion/fashion_juries/fashion_jury", collection: @fashion_juries %>
+
+  </div>
+  <div  class="more_box">
+    <div  class="more">
+      <span>more from</span>
+      <a href="<%= url_for fashion_fashion_juries_path %>" class="more_link arrow_append">&nbsp;Fashion Jury&nbsp;<span class="arrow_r_after"></span></a>
+    </div>
+  </div>
+</section>
+<div class="clearfix"></div>
+
+
+

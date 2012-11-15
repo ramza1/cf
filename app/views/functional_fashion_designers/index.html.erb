@@ -1,0 +1,35 @@
+<section class="span8">
+<div class="heading" style="border-bottom: none;">
+  <h1>Listing functional fashion designers</h1>
+</div>
+
+
+  <table class="table">
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th></th>
+      <% if can? :manage, FunctionalFashionDesigner %>
+      <th></th>
+      <th></th>
+      <% end %>
+    </tr>
+
+    <% @functional_fashion_designers.each do |functional_fashion_designer| %>
+        <tr>
+          <td><%= image_tag functional_fashion_designer.icon(:trend_small), class: "avatar" %></td>
+          <td><%= functional_fashion_designer.name %></td>
+          <td><%= link_to 'Show', functional_fashion_designer, :class => "btn btn-info" %></td>
+          <% if can? :manage, functional_fashion_designer %>
+          <td><%= link_to 'Edit', edit_functional_fashion_designer_path(functional_fashion_designer), :class => "btn" %></td>
+          <td><%= link_to 'Destroy', functional_fashion_designer, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
+          <% end %>
+        </tr>
+    <% end %>
+  </table>
+
+  <br />
+
+  <%= link_to 'New Functional fashion designer', new_functional_fashion_designer_path, :class => "btn" if can? :create, FunctionalFashionDesigner %>
+</section>
+

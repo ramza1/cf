@@ -1,0 +1,16 @@
+<section   class="span8">
+  <section  id="fashion_jury">
+    <header class="heading">
+      <h1>STYLE DIARY</h1>
+    </header>
+    <div class="row-fluid  jury_polaroid  ">
+      <%= render functional_fashions %>
+    </div>
+  </section>
+
+  <% if functional_fashions.next_page || functional_fashions.previous_page %>
+  <div class="pager" style="margin-top: 30px;">
+    <%= will_paginate functional_fashions %>
+  </div>
+  <% end %>
+</section>

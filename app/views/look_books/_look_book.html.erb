@@ -1,0 +1,25 @@
+<%
+ #locals
+   look_book_photos = look_book.photos.limit(4)
+%>
+
+<div class="look_brand">
+  <header style="padding-right: 10px;">
+    <h2>
+      <%= link_to look_book.name, style_look_book_path(look_book) %>
+    </h2>
+  </header>
+  <ul  class="thmbs ">
+    <% look_book_photos.each do |photo| %>
+    <li class="span3">
+      <a href="<%= image_path photo.photo(:original) %>" class="thumbnail transitionable" rel ="lightbox[roadtrip]<%= photo.photoable_id%>">
+        <%= image_tag photo.photo(:trend_small) %>
+
+      </a>
+      <p  class="lnk_thmb">
+      <%= photo.caption %>
+    </p>
+    </li>
+    <% end %>
+  </ul>
+</div>

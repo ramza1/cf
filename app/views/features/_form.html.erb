@@ -1,0 +1,16 @@
+<%= simple_form_for(@feature, :html => {class:"form-horizontal"}) do |f| %>
+
+ <fieldset>
+   <%= f.input :title %>
+   <%= f.input :content, :as => :ckeditor, :label => false, :input_html => { :toolbar => 'Full' } %>
+   <%= f.input :quote %>
+   <%= f.input :quote_owner %>
+   <%= f.input :top_image, as: :file, label: "Upload Top image" %>
+   <%= f.input :feature_image, as: :file, label: "Upload image" %>
+   <%= f.input :published_at, as: :string %>
+
+  <div class="form-actions">
+    <%= f.button :submit, :class => "btn" %>
+  </div>
+ </fieldset>
+<% end %>

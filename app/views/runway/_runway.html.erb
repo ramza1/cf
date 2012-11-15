@@ -1,0 +1,63 @@
+<section   class="span8">
+  <header   class="header_title">
+    <h1><a    href="#">RUNWAY</a></h1>
+  </header>
+  <section  id="runway" class="runway">
+    <%= render "runway/search_form" %>
+
+
+    <div class="runway_wrap row-fluid">
+      <div class="span2 collections"    style="display: none;">
+        <header class="heading">
+          <h2>
+            COLLECTIONS
+          </h2>
+        </header>
+        <div  class="collections_body">
+          <ul>
+
+          </ul>
+        </div>
+      </div>
+      <div class="collection">
+        <div  class="row-fluid">
+          <div class="span4">
+            <header   class="heading">
+              <h2>
+                COLLECTIONS
+              </h2>
+            </header>
+            <div id="collections_el">
+
+              <ul id="collection_nav"class="nav nav-list">
+                <% @runway_collections.each do |collection| %>
+                    <li class="<% if collection == @runway_collections.first %>active<% end %>">
+                      <%= link_to collection.name, collection %>
+                    </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+          <div  id="collection_body" class="collection_body es-carousel-wrapper span8">
+            <div class="es-carousel">
+              <ul>
+                <% if @first_group %>
+                    <%= render :partial => "runway/collections/photos", :collection => @first_group, :as => :photo %>
+                <% else %>
+                    <%= image_tag("missing_large.png") %>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <% if can? :manage, Runway::Collection %>
+      <div class="form-actions">
+        <%= link_to "Create A new year", new_runway_year_path, class: "btn" %>
+        <%= link_to "Create a new Season", new_runway_season_path, class: "btn" %>
+        <%= link_to "Create a new collection", new_runway_collection_path, class: "btn" %>
+      </div>
+ <% end %>
+</section>

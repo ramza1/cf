@@ -1,0 +1,19 @@
+<% @photos = redcarpet.photos.limit(3) %>
+<div class="red_box row-fluid">
+  <header class="heading">
+    <h1 >
+      <a href="<%= url_for redcarpet %>" class="arrow_append" > <%= redcarpet.title %> <span class="arrow_r_after"></span></a>
+    </h1>
+  </header>
+  <ul  class="thmbs ">
+    <% @photos.each do |photo| %>
+    <li class="span4">
+      <a href="<%= image_path photo.photo(:original) %>" class="thumbnail"  rel ="lightbox[roadtrip]<%= photo.photoable_id%>" title="<%= photo.caption %>">
+        <%= image_tag photo.photo(:big), :alt => "", :class => "absolute-image" %>
+      </a>                                  <p  class="lnk_thmb">
+      <a  ><%= photo.caption %></a>
+    </p>
+    </li>
+    <% end %>
+  </ul>
+</div>

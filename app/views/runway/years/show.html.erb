@@ -1,0 +1,9 @@
+<section class="span8">
+  <p>
+    <b>Year:</b> <%= @runway_year.name %>
+  </p>
+  <div>
+    <%= link_to "Edit", edit_runway_year_path(@runway_year) %>  | <%= link_to "Delete", @runway_year, :method => :delete, :confirm => "Are you sure" %>
+    | <%= link_to "View all years", runway_years_path %>
+  </div>
+</section>

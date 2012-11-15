@@ -1,0 +1,43 @@
+<section   class="span8">
+<header   class="header_title">
+  <h1><a    href="#">FASHION</a></h1>
+</header>
+<%= render "fashion" %>
+
+<%= render "runway_and_trend" %>
+
+<%= render "men_fashion" %>
+</section>
+
+<% content_for :javascript do %>
+<script type="text/javascript">
+    var $containerJury = $('.jury_polaroid');
+    $containerJury.imagesLoaded(function(){
+        $containerJury.masonry({
+            itemSelector : '.tile',
+            columnWidth : function( containerWidth ) {
+                return containerWidth / 3;
+            }
+        });
+    });
+    var $containerTrend = $('#trend_list');
+    $containerTrend.imagesLoaded(function(){
+        $containerTrend.masonry({
+            itemSelector : '.item',
+            columnWidth : function( containerWidth ) {
+                return containerWidth / 2;
+            }
+        });
+    });
+
+    var $containerTrend2 = $('.items');
+    $containerTrend2.imagesLoaded(function(){
+        $containerTrend2.masonry({
+            itemSelector : '.item',
+            columnWidth : function( containerWidth ) {
+                return containerWidth / 2;
+            }
+        });
+    });
+</script>
+<% end %>

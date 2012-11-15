@@ -1,0 +1,47 @@
+<section   class="span8">
+  <% if @blogs.any? %>
+  <header   class="header_title">
+    <h1>BLOG</h1>
+  </header>
+  <div class="divider"></div>
+  <section  id="events" class="events ">
+    <div    class="cover_container ">
+      <%= render @blogs %>
+    </div>
+
+  </section>
+  <% end %>
+  <% if @fashion_juries.any? %>
+  <section  id="fashion_jury">
+    <header class="header_title">
+      <h1>FASHION JURY</h1>
+    </header>
+    <div class="row-fluid  jury_polaroid" id="fashion_juries">
+
+      <%= render :partial => "fashion/fashion_juries/fashion_jury", :collection => @fashion_juries %>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+  <% end %>
+  <div class="clearfix"></div>
+  <% if @trend_spottings.any? %>
+<div style="margin-top: 10px;">
+  <header   class="header_title">
+    <h1>TREND SPOTTING</h1>
+  </header>
+  <div class="divider"></div>
+  <section class="events">
+    <div id="trend_spotting" class="row-fluid">
+      <%= render :partial => "trend_spottings/trend_spotting", :collection => @trend_spottings %>
+    </div>
+  </section>
+</div>
+  <% end %>
+  <% if @blogs.empty? && @trend_spottings.empty? && @fashion_juries.empty? %>
+  <p class="alert alert-info">
+    Sorry! no result matches your search
+  </p>
+  <% end %>
+</section>
+
+

@@ -1,0 +1,12 @@
+<section class="span8">
+  <header   class="show_header">
+    <h2 class="">
+      Edit year for runway collection
+    </h2>
+  </header>
+
+  <%= render "form" %>
+  <p>
+    <%= link_to "Back", @runway_year %> | <%= link_to "Delete", @runway_year, :method => :delete, :confirm => "Are you sure" %>
+  </p>
+</section>

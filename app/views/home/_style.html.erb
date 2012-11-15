@@ -1,0 +1,31 @@
+<section  id="fashion_jury_main" class="row-fluid ">
+  <header class="heading  caption heading_b">
+    <h1>STYLE DIARY</h1>
+  </header>
+
+  <div class="box col2">
+    <ul class="fashion-items items">
+      <% @functional_fashions.each do |functional_fashion| %>
+      <li class="span6   tile" >
+        <div class="polaroid style transitionable">
+          <div class="user_meta">
+            <%= image_tag functional_fashion.functional_fashion_designer.icon(:trend_small), :class => "avatar", :alt => "" %>
+            <div class="block">
+              <%= link_to functional_fashion.functional_fashion_designer.name, functional_fashion.functional_fashion_designer, class: "name" %>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <a href="<%= url_for style_functional_fashion_path(functional_fashion) %>" class="imageLink">
+            <%= image_tag functional_fashion.functional_fashion_image(:trend_small) %>
+          </a>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+    <div  class="more">
+      <span>more from</span>
+      <a href="<%= url_for style_functional_fashions_path %>"   rel="tooltip" title="Functional Fashion" class="more_link arrow_append">&nbsp;FUNCTIONAL FASHION&nbsp;<span class="arrow_r_after"></span></a>
+    </div>
+  </div>
+</section>

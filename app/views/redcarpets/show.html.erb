@@ -1,0 +1,56 @@
+<div    id="main_section"   class="span8 stamp">
+  <section  id="show_page">
+    <header   class="show_header">
+      <h1 class="">
+        <a href="#">
+          <%= @redcarpet.title %>
+        </a>
+      </h1>
+    </header>
+    <div class="red_box row-fluid">
+      <ul  class="thmbs row-fluid masonize">
+        <% @redcarpet.photos.each do |photo| %>
+        <li class="item span4">
+          <a href="<%= image_path photo.photo(:original) %>" class="thumbnail"  rel ="lightbox[roadtrip]<%= photo.photoable_id%>" title="<%= photo.caption %>">
+            <%= image_tag photo.photo(:big), :alt => "", :class => "absolute-image" %>
+          </a>
+          <p  class="lnk_thmb">
+            <a  ><%= photo.caption %></a>
+          </p>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+    <ul class="comments">
+      <div class="fb-comments" data-href="<%= url_for @redcarpet %>" data-num-posts="10" data-width="340"></div>
+
+    </ul>
+    <%= render "next_page", :obj => @redcarpet %>
+    <% if can? :manage, @redcarpet %>
+        <div class="form-actions">
+          <%= link_to "Manage Photos", redcarpet_photos_path(@redcarpet), class: "btn" %>
+          <%= link_to "Edit", edit_redcarpet_path(@redcarpet), class: "btn" %>
+          <%= link_to "Delete", @redcarpet, :method => :delete, data: {cornfirm: "Are you sure"}, class: "btn btn-danger" %>
+        </div>
+    <% end %>
+  </section>
+</div>
+
+
+<%= content_for :javascript do %>
+   <script type="text/javascript">
+       var $redCarpet = $('.thmbs');
+       $redCarpet.imagesLoaded(function(){
+           $redCarpet.masonry({
+               itemSelector : '.item',
+               columnWidth : function( containerWidth ) {
+                   return containerWidth / 3;
+               }
+           });
+       });
+
+   </script>
+
+<% end %>
+
+

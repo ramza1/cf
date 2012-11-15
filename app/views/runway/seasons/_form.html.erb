@@ -1,0 +1,13 @@
+<%= simple_form_for @runway_season, :html => {:class => "form-horizontal"} do |f| %>
+    <fieldset>
+      <%= f.input :name, label: "Season", :placeholder => "EX: Winter" %>
+      <div class="form-actions">
+        <%= f.submit :class => "btn" %>
+        <% if @runway_season.new_record? %>
+            <%= link_to "Manage seasons", runway_seasons_path, class: "btn" %>
+        <% else %>
+            <%= link_to "Cancel", @runway_season, class: "btn danger" %>
+        <% end %>
+      </div>
+    </fieldset>
+<% end %>

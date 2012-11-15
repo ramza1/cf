@@ -1,0 +1,24 @@
+<section   class="span8">
+  <header   class="header_title">
+    <h1><a href="<%= url_for fashion_fashion_juries_path %>">FASHION JURY</a></h1>
+  </header>
+  <section  id="fashion_jury">
+    <div class="row-fluid  jury_polaroid" id="fashion_juries">
+      <%= render :partial => "fashion/fashion_juries/fashion_jury", :collection => fashion_juries %>
+    </div>
+      <div class="clearfix"></div>
+
+   <% if fashion_juries.next_page || fashion_juries.previous_page %>
+    <div class="pager" style="margin-top: 30px;">
+       <%= will_paginate fashion_juries %>
+    </div>
+   <% end %>
+  </section>
+
+  <% if can? :create, FashionJury %>
+      <div class="form-actions">
+        <%= link_to 'New Fashion jury', new_fashion_jury_path,  class: "btn" %>
+      </div>
+  <% end %>
+
+</section>

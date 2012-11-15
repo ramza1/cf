@@ -1,0 +1,2 @@
+module LookBooksHelper
+end

@@ -1,0 +1,41 @@
+<section  id="redcarpet" class="stamp span8">
+  <%= render "next_page", :obj => @look_book %>
+
+  <header   class="show_header">
+    <h1 class="">
+        <%= @look_book.name %>
+    </h1>
+  </header>
+  <div class="red_box row-fluid">
+    <ul  class="thmbs row-fluid masonize">
+      <%= render :partial => "look_books/look_book_photos", :collection => @photos, :as => :photo, :locals => {:redcarpet => @look_book} %>
+    </ul>
+  </div>
+
+  <% if can? :manage, @look_book %>
+      <div class="form-actions">
+        <%= link_to "Manage Photos", look_book_photos_path(@look_book), :class => "btn" %>
+        <%= link_to "Edit", edit_look_book_path(@look_book), class: "btn" %>
+        <%= link_to "Delete", @look_book, :method => :delete, data: {confirm: "Are you sure"}, class: "btn btn-danger" %>
+      </div>
+  <% end %>
+
+</section>
+
+<%= content_for :javascript do %>
+    <script type="text/javascript">
+        var $redCarpet = $('.thmbs');
+        $redCarpet.imagesLoaded(function(){
+            $redCarpet.masonry({
+                itemSelector : '.item',
+                columnWidth : function( containerWidth ) {
+                    return containerWidth / 3;
+                }
+            });
+        });
+
+    </script>
+
+<% end %>
+
+

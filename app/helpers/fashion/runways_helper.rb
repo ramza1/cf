@@ -1,0 +1,2 @@
+module Fashion::RunwaysHelper
+end
