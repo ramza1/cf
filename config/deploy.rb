@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "rzaartz@208.68.37.172", :web, :app, :db, primary: true
+server "208.68.37.172", :web, :app, :db, primary: true
 
 set :application, "cf"
 set :user, "root"
