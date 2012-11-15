@@ -3,7 +3,7 @@ require "bundler/capistrano"
 server "rzaartz@208.68.37.172", :web, :app, :db, primary: true
 
 set :application, "cf"
-set :user, "rzaartz"
+set :user, "root"
 set :deploy_to, "/home/#{user}/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
