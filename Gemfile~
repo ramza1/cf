@@ -19,14 +19,25 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'twitter-bootstrap-rails', '~> 2.1.1'
+  gem 'jquery-ui-rails'
 end
 
 gem 'jquery-rails'
 gem 'paperclip'
 gem 'remotipart'
 gem 'ransack'
-gem "ckeditor", "3.7.2"
+gem "ckeditor", "~> 3.7.3"
 gem "omniauth-facebook", "~> 1.4.1"
+gem "devise", "~> 2.1.2"
+gem "omniauth-twitter", "~> 0.0.12"
+gem "simple_form"
+gem 'cancan'
+gem "will_paginate"
+
+
+group :development do
+  gem "mongrel", "~> 1.2.0.pre2"
+end
 
 
 # To use ActiveModel has_secure_password
@@ -39,7 +50,7 @@ gem "omniauth-facebook", "~> 1.4.1"
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
