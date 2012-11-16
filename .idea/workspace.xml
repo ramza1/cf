@@ -37,10 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_nav_bar.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_nav_bar.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/application/_nav_bar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="48" selection-start="2799" selection-end="2799" vertical-scroll-proportion="0.21200751">
+            <state line="59" column="48" selection-start="2799" selection-end="2799" vertical-scroll-proportion="-4.7083335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="106" selection-start="171" selection-end="171" vertical-scroll-proportion="0.11257035">
               <folding />
             </state>
           </provider>
@@ -100,15 +109,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_functional_fashion.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/style/functional_fashions/_functional_fashion.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -122,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/features/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/redcarpets/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/redcarpets/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tips/_index_point.html.erb" />
@@ -138,6 +137,7 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/home/_fashion.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_nav_bar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -497,6 +497,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="redcarpets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1064,13 +1086,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/style/look_books/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/look_books/_index_point.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="-0.0">
@@ -1197,7 +1212,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/application/_nav_bar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="48" selection-start="2799" selection-end="2799" vertical-scroll-proportion="0.21200751">
+        <state line="59" column="48" selection-start="2799" selection-end="2799" vertical-scroll-proportion="-4.7083335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="106" selection-start="171" selection-end="171" vertical-scroll-proportion="0.11257035">
           <folding />
         </state>
       </provider>
