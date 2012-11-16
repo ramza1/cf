@@ -1,3 +1,5 @@
-FACEBOOK_URL = "http://facebook.com/complete"
-GPLUS_URL = "http://gplus.com/complete"
-TWITTER_URL = "http://twitter.com/username"
+FACEBOOK_URL = "http://www.facebook.com/completefashionmagazine"
+GPLUS_URL = "http://plus.google.com/completefashionmagazine"
+TWITTER_URL = "http://twitter.com/completefashion"
+PINTEREST =   "http://pinterest.com/completefashion"
+TUMBLR =  "http://completefashion.tumblr.com/"

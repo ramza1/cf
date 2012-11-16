@@ -14,13 +14,13 @@
         <a href="<%= TWITTER_URL %>" rel="tooltip" title="twitter" target="_blank">	</a>
       </li>
       <li class="pinterest_ic  span2 si">
-        <a>	</a>
+        <a href="<%= PINTEREST %>" rel="tooltip" title="pinterest" target="_blank">	</a>
       </li>
       <li class="tumblr_ic  span2 si">
-        <a></a>
+        <a href="<%= TUMBLR %>" rel="tooltip" title="tumblr" target="_blank"></a>
       </li>
       <li class="email_ic  span2 si">
-        <a>	</a>
+        <a href="#subscribe" rel="tooltip" title="subscribe for news letter">	</a>
       </li>
     </ul>
   </section>
@@ -70,4 +70,15 @@
   <a class="twitter-timeline" href="https://twitter.com/completefashion" data-widget-id="269421304753557504">Tweets by @completefashion</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+  <section  id="magazine">
+    <div    class="header_b">
+      <h1>TAG CLOUD</h1>
+    </div>
+    <div id="tag_cloud">
+      <% tag_cloud Blog.tag_counts, %w[s m l] do |tag, css_class| %>
+          <%= link_to tag.name.capitalize, tag_path(tag.name), class: css_class %>
+      <% end %>
+    </div>
+
+  </section>
 </aside>

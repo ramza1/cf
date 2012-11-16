@@ -11,7 +11,8 @@
       <%= image_tag blog.blog_image(:trend_small) %>
     </a>
     <p class="blog_meta"> posted in
-      <span class="category">Blog</span>
+      <%= raw blog.tag_list.map {|t| link_to t, tag_path(t), class: "transitionable category" }.join(", ") %>
+
       <span class="date"> <%= blog.published_at.strftime("on %^b  %d  %I:%M%p")%></span>
     </p>
   </div>

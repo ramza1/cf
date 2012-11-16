@@ -1,5 +1,5 @@
 class Blog < ActiveRecord::Base
-  attr_accessible :content, :title, :blog_image, :published_at
+  attr_accessible :content, :title, :blog_image, :published_at, :tag_list
   has_attached_file :blog_image, :styles => {:trend_small => "700x490>", :original => "800x800>"}
   validates_attachment_presence :blog_image
   validates_attachment_content_type :blog_image, :content_type => ['image/jpeg', 'image/png', 'image/gif']
@@ -8,6 +8,8 @@ class Blog < ActiveRecord::Base
   scope :unpublished, lambda { where('published_at > ?', Time.now.utc) }
   scope :recent, order('published_at DESC')
   validates :content, :title, :published_at, :presence => true
+
+  acts_as_taggable
 
   def self.search_published(query, tag_id = nil)
       published.primitive_search(query)

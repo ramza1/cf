@@ -1,7 +1,7 @@
 Cf::Application.routes.draw do
 
 
-
+  get 'tags/:tag', to: "blogs#index", as: :tag
   mount Ckeditor::Engine => '/ckeditor'
 
   resources :tips

@@ -1,6 +1,7 @@
+<%= provide :title, "Blog" %>
 <section   class="span8" style="margin-bottom: 30px">
   <header   class="header_title">
-    <h1><a    href="#">BLOG</a></h1>
+    <h1 style="text-transform: uppercase;"><a    href="#"><% if params[:tag]%> <%= params[:tag].capitalize %> <% end %> STORIES</a></h1>
   </header>
   <div class="divider"></div>
   <section  id="events" class="events ">

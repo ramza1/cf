@@ -1,3 +1,4 @@
+<%= provide :title, @blog.title %>
 <section   class="trend_show span8">
 
     <header   class="show_header">
@@ -8,9 +9,7 @@
 
 
   <p class="blog_meta">posted in
-    <a  class="transitionable category" href="#">
-      <span>Blog</span>
-    </a>
+    <%= raw @blog.tag_list.map {|t| link_to t, tag_path(t), class: "transitionable category" }.join(", ") %>
     <span class="date"> on&nbsp;&nbsp;<%= @blog.published_at.strftime("%^b  %d  %I:%M%p")%></span>
   </p>
   <div   class="media">
@@ -21,7 +20,7 @@
   </div>
 
   <ul class="comments">
-    <div class="fb-comments" data-href="<%= url_for @blog %>" data-num-posts="10" data-width="340"></div>
+    <div class="fb-comments" data-href="<%= url_for blog_url(@blog) %>" data-num-posts="10" data-width="500"></div>
 
   </ul>
   <ul class="pager">

@@ -3,6 +3,7 @@
     <%= f.input :content, :as => :ckeditor, :label => false, :input_html => { :toolbar => 'Full' } %>
   <%= f.input :blog_image, :as => :file, :label => "Upload Image" %>
   <%= f.input :published_at, as: :string %>
+  <%= f.input :tag_list, label: "Tags (Separated by commas)", placeholder: "Ex: Africa, Fashion", :input_html => {class: "span9"} %>
   <div class="form-actions">
     <%= f.button :submit %>
   </div>

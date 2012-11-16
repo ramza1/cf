@@ -1,8 +1,11 @@
 class BlogsController < ApplicationController
   load_and_authorize_resource
   def index
+    if params[:tag]
+      @blogs = Blog.tagged_with(params[:tag]).accessible_by(current_ability).recent.page(params[:page]).per_page(27)
+    else
       @blogs = Blog.accessible_by(current_ability).recent.page(params[:page]).per_page(27)
-
+    end
 
     respond_to do |format|
       format.html # index.html.erb
