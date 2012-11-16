@@ -3,22 +3,33 @@
   <ul  class="row-fluid  col6 footer_menu">
     <li  class="category_item  span2">
       <%= link_to "FASHION", fashion_path %>
+      <ul class="bottom-ul">
+        <li><%= link_to "Fashion Jury", fashion_fashion_juries_path %></li>
+        <li><%= link_to "Rnuway", runway_path %></li>
+        <li><%= link_to "Men's Fashion", fashion_men_fashions_path %></li>
+        <li><%= link_to "Trend Spotting", fashion_trend_spottings_path %></li>
+      </ul>
     </li>
 
     <li  class="category_item  span2">
       <%= link_to "VIDEOS", videos_path %>
     </li>
     <li  class="category_item  span2">
-      <%= link_to "TREND SPOTTING", fashion_trend_spottings_path %>
+      <%= link_to "BLOG", blogs_path %>
     </li>
     <li  class="category_item  span2">
       <%= link_to "RED CARPET MOMENTS", redcarpets_path %>
     </li>
     <li  class="category_item  span2">
-      <%= link_to "RUNWAY", runway_path %>
+      <%= link_to "FEATURES", features_path %>
     </li>
     <li  class="category_item  span2">
      <%= link_to "STYLES", styles_path %>
+      <ul class="bottom-ul">
+        <li><%= link_to "Style Diary", style_functional_fashions_path %></li>
+        <li><%= link_to "LookBook", style_look_books_path %></li>
+        <li><%= link_to "Tips And Tutorials", style_tips_path %></li>
+      </ul>
     </li>
   </ul>
 

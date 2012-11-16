@@ -33,6 +33,7 @@ gem "omniauth-twitter", "~> 0.0.12"
 gem "simple_form"
 gem 'cancan'
 gem "will_paginate"
+gem 'acts-as-taggable-on'
 
 
 group :development do
