@@ -7,19 +7,20 @@
        <%= render "slide" %>
       </div>
       <div class="span6">
-        <%= render "blog" %>
+        <%= render "blog" unless @blogs.empty? %>
       </div>
     </div>
   </div>
 </section>
 
-<%= render "fashion" %>
-<%= render "style" %>
+<%= render "fashion" unless @fashion_juries.empty? %>
+<%= render "style" unless @functional_fashions.empty? %>
 
 <%= render "trend" %>
 
 <%= render "video" %>
 
+<% if @redcarpet %>
  <% if @redcarpet_photos.size >= 10 %>
 
     <%= render "redcarpet" %>
@@ -53,6 +54,6 @@
     </div>
   </div>
 </section>
- <% end %>
+ <% end end %>
 </section>
 

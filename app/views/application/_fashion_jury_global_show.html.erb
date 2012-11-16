@@ -18,7 +18,7 @@
     <h2>
       Comments
     </h2>
-    <div class="fb-comments" data-href="http://example.com" data-num-posts="10" data-width="340"></div>
+    <div class="fb-comments" data-href="<%= url_for fashion_fashion_jury_url(@fashion_jury) %>" data-num-posts="10" data-width="340"></div>
   </div>
 
   <% if can? :manage, @fashion_jury %>

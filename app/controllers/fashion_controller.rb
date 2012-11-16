@@ -4,7 +4,7 @@ class FashionController < ApplicationController
     @fashion_juries = FashionJury.accessible_by(current_ability).recent.limit(3)
     @trend_spotting = TrendSpotting.accessible_by(current_ability).last
     @collections =  Runway::Collection.accessible_by(current_ability).recent.limit(4)
-    @photos = @trend_spotting.photos.limit(4)
+    @photos = @trend_spotting.photos.limit(4) if @trend_spotting
     @men_fashions = MenFashion.accessible_by(current_ability).recent.limit(2)
   end
 end

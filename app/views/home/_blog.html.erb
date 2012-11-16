@@ -3,7 +3,7 @@
     <h3>latest news...</h3>
   </header>
   <div	class="news_box">
-
+ <% unless @blogs.empty? %>
     <div class="row-fluid ">
     <% first_blog = @blogs.first %>
       <div class="">
@@ -24,6 +24,7 @@
         </div>
       </div>
     </div>
+<% end %>
     <div class="row-fluid ">
 
       <ul class="news-items items">

@@ -61,4 +61,13 @@
       </div>
     </div>
   </section>
+  <% unless latest_video.nil? %>
+   <iframe class="youtube-player" type="text/html" width="100%" height="264" src="http://www.youtube.com/embed/<%= latest_video.youtube_video_id %>" frameborder="0">
+   </iframe>
+  <% end %>
+  <div class="fb-like-box" data-href="http://www.facebook.com/completefashionmagazine" data-width="300" data-colorscheme="light" data-show-faces="true" data-stream="false" data-header="true"></div>
+
+  <a class="twitter-timeline" href="https://twitter.com/completefashion" data-widget-id="269421304753557504">Tweets by @completefashion</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 </aside>

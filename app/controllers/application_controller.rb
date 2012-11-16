@@ -5,4 +5,10 @@ class ApplicationController < ActionController::Base
     flash[:error] = "Access denied."
     redirect_to root_url
   end
+
+  def latest_video
+    Video.published.recent.first
+  end
+
+  helper_method :latest_video
 end

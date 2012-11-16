@@ -1,6 +1,6 @@
 <% right_ads = RightAd.running_ads %>
 
-
+<% cache "right_ads" do %>
 <div id="myCarousel" class="carousel slide">
   <!-- Carousel items -->
   <div class="carousel-inner">
@@ -12,3 +12,4 @@
     <div class="item"><%= link_to image_tag("300x600_3.jpg"), "#" %></div>
   </div>
 </div>
+<% end %>

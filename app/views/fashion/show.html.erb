@@ -2,11 +2,11 @@
 <header   class="header_title">
   <h1><a    href="#">FASHION</a></h1>
 </header>
-<%= render "fashion" %>
+<%= render "fashion" unless @fashion_juries.empty? %>
 
-<%= render "runway_and_trend" %>
+<%= render "runway_and_trend" unless @collections.empty? %>
 
-<%= render "men_fashion" %>
+<%= render "men_fashion" unless  @men_fashions.empty? %>
 </section>
 
 <% content_for :javascript do %>
