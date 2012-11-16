@@ -36,10 +36,6 @@ gem "will_paginate"
 gem 'acts-as-taggable-on'
 
 
-group :development do
-  gem "mongrel", "~> 1.2.0.pre2"
-end
-
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
