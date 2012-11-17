@@ -16,9 +16,6 @@ set :scm, "git"
 set :repository, "git@github.com:ramza1/#{application}.git"
 set :branch, "master"
 
-set :default_environment, {
-    'PATH' => "/home/deployer/.rbenv/versions/1.9.3-p327/bin",
-}
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
