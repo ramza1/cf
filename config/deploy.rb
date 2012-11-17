@@ -17,7 +17,7 @@ set :repository, "git@github.com:ramza1/#{application}.git"
 set :branch, "master"
 
 set :default_environment, {
-  'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+  'PATH' => "$HOME/#{user}/.rbenv/shims:$HOME/#{user}/.rbenv/bin:$PATH"
 }
 
 default_run_options[:pty] = true
