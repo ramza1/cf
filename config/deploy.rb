@@ -10,12 +10,6 @@ set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
-set(:latest_release)  { fetch(:current_path) }
-set(:release_path)    { fetch(:current_path) }
-set(:current_release) { fetch(:current_path) }
-
-
-
 set :scm, "git"
 set :repository, "git@github.com:ramza1/#{application}.git"
 set :branch, "master"
