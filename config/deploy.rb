@@ -1,5 +1,5 @@
 require "bundler/capistrano"
-require "rvm/capistrano"
+
 
 server "208.68.37.172", :web, :app, :db, primary: true
 
@@ -7,9 +7,9 @@ set :application, "cf"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
-set :use_sudo, true
-set :rvm_ruby_string, '1.9.3'
-set :rvm_type, :user
+set :use_sudo, false
+
+
 
 set :scm, "git"
 set :repository, "git@github.com:ramza1/#{application}.git"
@@ -51,4 +51,6 @@ namespace :deploy do
     end
   end
   before "deploy", "deploy:check_revision"
+
+
 end
