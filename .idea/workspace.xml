@@ -58,19 +58,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.3">
+            <state line="10" column="30" selection-start="262" selection-end="262" vertical-scroll-proportion="11.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="57" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+            <state line="10" column="57" selection-start="200" selection-end="200" vertical-scroll-proportion="0.2529511">
               <folding />
             </state>
           </provider>
@@ -1050,13 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="57" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194/gems/omniauth-1.1.1/lib/omniauth/strategy.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="384" column="8" selection-start="12496" selection-end="12496" vertical-scroll-proportion="0.33213645">
@@ -1087,7 +1080,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.3">
+        <state line="10" column="30" selection-start="262" selection-end="262" vertical-scroll-proportion="11.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="57" selection-start="200" selection-end="200" vertical-scroll-proportion="0.2529511">
           <folding />
         </state>
       </provider>
