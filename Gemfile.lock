@@ -163,8 +163,6 @@ GEM
     rdoc (3.12)
       json (~> 1.4)
     remotipart (1.0.2)
-    rvm-capistrano (1.2.7)
-      capistrano (>= 2.0.0)
     sass (3.2.1)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -221,7 +219,6 @@ DEPENDENCIES
   rails (= 3.2.9)
   ransack
   remotipart
-  rvm-capistrano
   sass-rails (~> 3.2.3)
   simple_form
   twitter-bootstrap-rails (~> 2.1.1)
