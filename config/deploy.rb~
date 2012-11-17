@@ -1,4 +1,4 @@
-#require 'capistrano-rbenv'
+require 'capistrano-rbenv'
 require "bundler/capistrano"
 
 
@@ -8,7 +8,7 @@ set :application, "cf"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
-set :use_sudo, false
+set :use_sudo, true
 
 
 
@@ -16,26 +16,22 @@ set :scm, "git"
 set :repository, "git@github.com:ramza1/#{application}.git"
 set :branch, "master"
 
-set :default_environment, {
-  'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
-}
-
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
-
-  namespace :assets do
-    task :precompile, :roles => :web, :except => { :no_release => true } do
-      run "cd #{current_path} && #{rake} RAILS_ENV=#{rails_env} RAILS_GROUPS=assets assets:precompile --trace"
-    end
-  end
 
 namespace :deploy do
   %w[start stop restart].each do |command|
     desc "#{command} unicorn server"
     task command, roles: :app, except: {no_release: true} do
       run "/etc/init.d/unicorn_#{application} #{command}"
+    end
+  end
+
+  namespace :assets do
+    task :precompile, :roles => :web, :except => { :no_release => true } do
+      run "cd #{current_path} && #{rake} RAILS_ENV=#{rails_env} RAILS_GROUPS=assets assets:precompile --trace"
     end
   end
 
