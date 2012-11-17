@@ -74,16 +74,7 @@
       <file leaf-file-name="unicorn.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="235" selection-end="235" vertical-scroll-proportion="0.22765599">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Capfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Capfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="30" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+            <state line="13" column="32" selection-start="308" selection-end="308" vertical-scroll-proportion="0.3288364">
               <folding />
             </state>
           </provider>
@@ -1091,20 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="73" selection-start="879" selection-end="880" vertical-scroll-proportion="-13.266666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="50" selection-start="397" selection-end="399" vertical-scroll-proportion="0.26159555">
@@ -1119,9 +1096,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Capfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="30" selection-start="117" selection-end="117" vertical-scroll-proportion="0.075885326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="73" selection-start="879" selection-end="880" vertical-scroll-proportion="-13.266666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="235" selection-end="235" vertical-scroll-proportion="0.22765599">
+        <state line="13" column="32" selection-start="308" selection-end="308" vertical-scroll-proportion="0.3288364">
           <folding />
         </state>
       </provider>
