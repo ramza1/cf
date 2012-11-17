@@ -27,12 +27,6 @@ namespace :deploy do
     end
   end
 
-  namespace :assets do
-    task :precompile, :roles => :web, :except => { :no_release => true } do
-      run "cd #{release_path} && #{rake} RAILS_ENV=#{rails_env} RAILS_GROUPS=assets assets:precompile --trace"
-    end
-  end
-
   task :setup_config, roles: :app do
     sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
     sudo "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{application}"
