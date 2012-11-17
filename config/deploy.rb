@@ -1,4 +1,4 @@
-require 'capistrano-rbenv'
+#require 'capistrano-rbenv'
 require "bundler/capistrano"
 
 
@@ -24,6 +24,12 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
+
+  namespace :assets do
+    task :precompile, :roles => :web, :except => { :no_release => true } do
+      run "cd #{current_path} && #{rake} RAILS_ENV=#{rails_env} RAILS_GROUPS=assets assets:precompile --trace"
+    end
+  end
 
 namespace :deploy do
   %w[start stop restart].each do |command|
