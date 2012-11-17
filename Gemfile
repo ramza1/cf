@@ -50,6 +50,12 @@ gem 'unicorn'
 gem 'capistrano'
 gem 'capistrano-rbenv'
 
+group :production do
+  gem 'therubyracer'
+  gem 'execjs'
+end
+
+
 
 # To use debugger
 # gem 'debugger'

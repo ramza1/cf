@@ -213,6 +213,7 @@ DEPENDENCIES
   ckeditor (~> 3.7.3)
   coffee-rails (~> 3.2.1)
   devise (~> 2.1.2)
+  execjs
   jquery-rails
   jquery-ui-rails
   mysql2
@@ -224,6 +225,7 @@ DEPENDENCIES
   remotipart
   sass-rails (~> 3.2.3)
   simple_form
+  therubyracer
   twitter-bootstrap-rails (~> 2.1.1)
   uglifier (>= 1.0.3)
   unicorn
