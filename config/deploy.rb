@@ -8,7 +8,7 @@ set :application, "cf"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
-set :use_sudo, false
+set :use_sudo, true
 
 
 
@@ -17,10 +17,11 @@ set :repository, "git@github.com:ramza1/#{application}.git"
 set :branch, "master"
 
 set :default_environment, {
-  'PATH' => "/home/#{user}/.rbenv/versions/1.9.3-p327/bin",
-  'GEM_PATH' => "/home/#{user}/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1",
+    'PATH' => "/home/deployer/.rbenv/versions/1.9.3-p327/bin",
+    'GEM_HOME' => '/home/deployer/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1',
+    'GEM_PATH' => '/home/deployer/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1',
+    'BUNDLE_PATH' => '/home/deployer/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems'
 }
-
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
