@@ -29,7 +29,7 @@ namespace :deploy do
 
   namespace :assets do
     task :precompile, :roles => :web, :except => { :no_release => true } do
-      run "cd #{current_path} && #{rake} RAILS_ENV=#{rails_env} RAILS_GROUPS=assets assets:precompile --trace"
+      run "cd #{release_path} && #{rake} RAILS_ENV=#{rails_env} RAILS_GROUPS=assets assets:precompile --trace"
     end
   end
 
