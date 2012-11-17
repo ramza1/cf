@@ -1,4 +1,4 @@
-#require 'capistrano-rbenv'
+require 'capistrano-rbenv'
 require "bundler/capistrano"
 
 
@@ -18,9 +18,6 @@ set :branch, "master"
 
 set :default_environment, {
     'PATH' => "/home/deployer/.rbenv/versions/1.9.3-p327/bin",
-    'GEM_HOME' => '/home/deployer/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1',
-    'GEM_PATH' => '/home/deployer/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1',
-    'BUNDLE_PATH' => '/home/deployer/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems'
 }
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
