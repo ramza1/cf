@@ -1,4 +1,4 @@
-root = "/home/deployer/apps/cf"
+root = "/home/deployer/apps/cf/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
