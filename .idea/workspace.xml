@@ -73,10 +73,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.9612142">
+            <state line="18" column="4" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_admin_settings.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/application/_admin_settings.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="49" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.6043956">
               <folding />
             </state>
           </provider>
@@ -112,7 +121,6 @@
         <option value="$PROJECT_DIR$/app/views/fashion/_runway_and_trend.html.erb" />
         <option value="$PROJECT_DIR$/app/views/style/functional_fashions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/style/tips_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/application/_admin_settings.html.erb" />
         <option value="$PROJECT_DIR$/app/views/fashion_tips/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/fashion_tip.rb" />
         <option value="$PROJECT_DIR$/app/views/fashion_tips/new.html.erb" />
@@ -120,6 +128,7 @@
         <option value="$PROJECT_DIR$/app/controllers/tips_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20121118185148_rename_column_in_tips.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/application/_admin_settings.html.erb" />
       </list>
     </option>
   </component>
@@ -1051,13 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/application/_admin_settings.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="47" selection-start="1385" selection-end="1385" vertical-scroll-proportion="-15.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/tip.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="9" selection-start="31" selection-end="998" vertical-scroll-proportion="0.0">
@@ -1116,7 +1118,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.9612142">
+        <state line="18" column="4" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/application/_admin_settings.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="49" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.6043956">
           <folding />
         </state>
       </provider>
