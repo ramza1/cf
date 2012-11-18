@@ -48,7 +48,7 @@ gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'capistrano'
-gem 'capistrano-rbenv'
+#gem 'capistrano-rbenv'
 
 group :production do
   gem 'therubyracer'
