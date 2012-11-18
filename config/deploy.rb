@@ -1,6 +1,4 @@
-#require 'capistrano-rbenv'
 require "bundler/capistrano"
-
 
 server "208.68.37.172", :web, :app, :db, primary: true
 
@@ -9,7 +7,6 @@ set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
-set :unicorn_binary, 'unicorn_rails'
 
 set :scm, "git"
 set :repository, "git@github.com:ramza1/#{application}.git"
@@ -51,5 +48,4 @@ namespace :deploy do
     end
   end
   before "deploy", "deploy:check_revision"
-
 end
