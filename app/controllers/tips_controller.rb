@@ -1,5 +1,6 @@
 class TipsController < ApplicationController
   load_and_authorize_resource
+  layout "forms", :only => [:new, :edit]
   def index
     @tips = Tip.accessible_by(current_ability).recent.page(params[:page]).per_page(27)
 
@@ -46,7 +47,7 @@ class TipsController < ApplicationController
         format.html { redirect_to @tip, notice: 'Tip was successfully created.' }
         format.json { render json: @tip, status: :created, location: @tip }
       else
-        format.html { render action: "new" }
+        format.html { render action: "new", layout: "forms"}
         format.json { render json: @tip.errors, status: :unprocessable_entity }
       end
     end

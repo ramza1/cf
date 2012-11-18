@@ -1,5 +1,6 @@
 <section id="trending_runway"  class="row-fluid">
   <div class="box col2">
+ <% unless @collections.empty? %>
     <div class="span6">
       <div  class="heading  caption heading_b">
         <h1>RUNWAY</h1>
@@ -34,6 +35,8 @@
         </div>
       </div>
     </div>
+ <% end %>
+   <% if @trend_spotting%>
     <div class="span6">
       <div  class="heading    caption heading_b">
         <h1>TREND SPOTTING</h1>
@@ -65,5 +68,6 @@
         </div>
       </div>
     </div>
+  <% end %>
   </div>
 </section>

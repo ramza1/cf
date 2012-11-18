@@ -10,7 +10,7 @@
     <%= image_tag @functional_fashion.functional_fashion_image(:original) %>
   </div>
   <p>
-    <%= @functional_fashion.content %>
+    <%= raw @functional_fashion.content %>
   </p>
 
   <% if can? :manage, @functional_fashion %>

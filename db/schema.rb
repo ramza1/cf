@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121116133922) do
+ActiveRecord::Schema.define(:version => 20121118185148) do
 
   create_table "blogs", :force => true do |t|
     t.string   "title"
@@ -53,6 +53,18 @@ ActiveRecord::Schema.define(:version => 20121116133922) do
     t.datetime "fashion_jury_image_updated_at"
     t.string   "title"
     t.datetime "published_at"
+  end
+
+  create_table "fashion_tips", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "published_at"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+    t.string   "tip_image_file_name"
+    t.string   "tip_image_content_type"
+    t.integer  "tip_image_file_size"
+    t.datetime "tip_image_updated_at"
   end
 
   create_table "features", :force => true do |t|
@@ -233,7 +245,7 @@ ActiveRecord::Schema.define(:version => 20121116133922) do
 
   create_table "tips", :force => true do |t|
     t.string   "title"
-    t.string   "body"
+    t.text     "body"
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
     t.datetime "published_at"
