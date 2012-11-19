@@ -7,7 +7,6 @@ class Magazine < ActiveRecord::Base
   scope :published, lambda { where('published_at <= ?', Time.now.utc) }
   scope :recent, order('published_at DESC')
   validates :description, :published_at, :title, :mag_cover, :presence => true
-  after_save :expire_cache
 
   def previous
     self.class.where("id < ?", id).order("id desc").first
@@ -23,9 +22,5 @@ class Magazine < ActiveRecord::Base
 
   def published?
     published_at <= Time.zone.now
-  end
-
-  def expire_cache
-    ActionController::Base.cache_store.delete_matched("mag")
   end
 end

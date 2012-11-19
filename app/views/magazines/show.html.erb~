@@ -10,7 +10,7 @@
     <div class="span6 media_img_wrap" >
 
       <div class="media-left">
-        <%= image_tag @magazine.mag_cover(:original) %>
+        <%= image_tag @magazine.mag_cover(:trend_small) %>
       </div>
     </div>
     <p><%= @magazine.description %></p>

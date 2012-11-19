@@ -23,7 +23,7 @@
       </ul>
     </div>
     <ul class="comments">
-      <div class="fb-comments" data-href="<%= url_for @redcarpet %>" data-num-posts="10" data-width="500"></div>
+      <div class="fb-comments" data-href="<%= url_for redcarpet_url(@redcarpet) %>" data-num-posts="10" data-width="340"></div>
 
     </ul>
     <%= render "next_page", :obj => @redcarpet %>

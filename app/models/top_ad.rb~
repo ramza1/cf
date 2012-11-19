@@ -16,7 +16,7 @@ class TopAd < ActiveRecord::Base
   end
 
   def expire_cache
-    ActionController::Base.cache_store.delete_matched("top_ads")
+    ActionController::Base.cache_store.delete_matched("right_ads")
   end
 end
 

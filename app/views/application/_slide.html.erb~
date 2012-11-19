@@ -8,7 +8,7 @@
     <div class="<% if slide == slides.first %>active <% end %>item"><%= link_to image_tag(slide.slide_image(:trend_small), style: "height: 453px; width: 302px;", alt: ""), slide.url %>
       <div class="carousel-caption"  data-y="100" data-transition="expandDown">
         <h1><%= link_to slide.title, slide.url %></h1>
-        <p><%= link_to slide.caption, slide.url %></p>
+        <p><%= slide.caption %></p>
       </div>
     </div>
     <% end %>

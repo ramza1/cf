@@ -49,11 +49,9 @@
     <% mag = Magazine.published.last %>
     <div  class="thumbnail">
       <% if mag %>
-<% cache "mag" do %>
       <a href="<%= url_for mag %>" class="magazine">
         <%= image_tag mag.mag_cover(:trend_small), :id => "magazine_banner" %>
       </a>
-<% end %>
       <% end %>
     </div>
     <div  class="more_box" style="padding: 0; overflow: hidden;">

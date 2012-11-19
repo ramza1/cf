@@ -9,7 +9,6 @@ class RightAd < ActiveRecord::Base
 
   scope :running_ads, lambda { where('end_date > ? AND start_date <= ?', Time.now.utc, Time.now.utc) }
   scope :unpublished, lambda { where('published_at > ?', Time.now.utc) }
-  after_save :expire_cache
 
   def out_of_date?
     end_date <= Time.zone.now

@@ -6,7 +6,6 @@ class Slide < ActiveRecord::Base
   validates_attachment_presence :slide_image
   validates :caption, :slide_image, :title, :published_at, :presence => true
   scope :published, lambda { where('published_at <= ?', Time.now.utc) }
-  after_save :expire_cache
 
   def expire_cache
     ActionController::Base.cache_store.delete_matched("slides")
