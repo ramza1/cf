@@ -97,19 +97,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_blog.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_blog.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_blog.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="111" selection-start="1540" selection-end="1540" vertical-scroll-proportion="-13.125">
+            <state line="20" column="106" selection-start="772" selection-end="772" vertical-scroll-proportion="0.028142588">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_blog.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_blog.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/blogs/_blog.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="62" selection-start="328" selection-end="328" vertical-scroll-proportion="0.2251407">
+            <state line="8" column="92" selection-start="358" selection-end="358" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -142,8 +142,8 @@
         <option value="$PROJECT_DIR$/app/views/functional_fashions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/look_books/_look_book.html.erb" />
         <option value="$PROJECT_DIR$/app/views/look_books/_look_book_photos.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/_blog.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/_blog.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/home/_blog.html.erb" />
       </list>
     </option>
   </component>
@@ -926,16 +926,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_blog.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/_blog.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="111" selection-start="1540" selection-end="1540" vertical-scroll-proportion="-13.125">
+        <state line="8" column="92" selection-start="358" selection-end="358" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogs/_blog.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/home/_blog.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="62" selection-start="328" selection-end="328" vertical-scroll-proportion="0.2251407">
+        <state line="20" column="106" selection-start="772" selection-end="772" vertical-scroll-proportion="0.028142588">
           <folding />
         </state>
       </provider>
