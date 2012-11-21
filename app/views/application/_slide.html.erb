@@ -1,4 +1,4 @@
-<% slides = Slide.published %>
+<% slides = Slide.published.recent.limit(4) %>
 <% unless slides.empty? %>
 <% cache "slides" do %>
 <div id="myCarousel2" class="carousel slide">

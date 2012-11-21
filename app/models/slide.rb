@@ -7,6 +7,7 @@ class Slide < ActiveRecord::Base
   validates :caption, :slide_image, :title, :published_at, :presence => true
   scope :published, lambda { where('published_at <= ?', Time.now.utc) }
   after_save :expire_cache
+  scope :recent, order('published_at DESC')
 
   def expire_cache
     ActionController::Base.cache_store.delete_matched("slides")
