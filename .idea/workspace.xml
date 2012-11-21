@@ -22,7 +22,16 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/style/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="28" selection-start="120" selection-end="120" vertical-scroll-proportion="-1.875">
+            <state line="25" column="21" selection-start="879" selection-end="879" vertical-scroll-proportion="-15.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_look_book.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/look_books/_look_book.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="10" selection-start="562" selection-end="562" vertical-scroll-proportion="0.5">
               <folding />
             </state>
           </provider>
@@ -48,15 +57,6 @@
                 <marker date="1353079646000" expanded="false" signature="368:385" placeholder="..." />
                 <marker date="1353079646000" expanded="true" signature="386:431" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="121" selection-start="239" selection-end="239" vertical-scroll-proportion="-1.875">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -97,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_blog.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_blog.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_blog.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="82" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.59099436">
+            <state line="40" column="82" selection-start="1512" selection-end="1512" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -140,10 +140,10 @@
         <option value="$PROJECT_DIR$/app/views/style/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/functional_fashions/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/look_books/_look_book.html.erb" />
         <option value="$PROJECT_DIR$/app/views/look_books/_look_book_photos.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/_blog.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/_blog.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/look_books/_look_book.html.erb" />
       </list>
     </option>
   </component>
@@ -822,13 +822,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/blog.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="6" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0">
@@ -898,20 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/look_books/_look_book.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="87" selection-start="546" selection-end="546" vertical-scroll-proportion="0.46201232">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/style/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="120" selection-end="120" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/photo.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="55" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
@@ -935,7 +914,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_blog.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="82" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.59099436">
+        <state line="40" column="82" selection-start="1512" selection-end="1512" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/style_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="212" selection-end="212" vertical-scroll-proportion="0.11235955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/style/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="21" selection-start="879" selection-end="879" vertical-scroll-proportion="-15.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/look_books/_look_book.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="10" selection-start="562" selection-end="562" vertical-scroll-proportion="0.5">
           <folding />
         </state>
       </provider>
