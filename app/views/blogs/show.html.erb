@@ -45,10 +45,9 @@
           <h2>
             <a href="<%= url_for blog %>" rel="tooltip" class="arrow_append" data-original-title="<%= blog.title %>">
               <%= blog.title %>
-              <span class="arrow_r_after"></span>
             </a>
           </h2>
-          <p><%=  strip_tags(truncate(blog.content, :length => 100)) %></p>
+          <p><%= link_to sanitize(strip_tags(truncate(blog.summary, :length => 100))), blog %></p>
           <a class="thumb" >
             <%= image_tag blog.blog_image(:trend_small), :alt => "" %>
           </a>
