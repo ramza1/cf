@@ -13,7 +13,7 @@
     <% look_book_photos.each do |photo| %>
     <li class="span3">
       <a href="<%= image_path photo.photo(:original) %>" class="thumbnail transitionable" rel ="lightbox[roadtrip]<%= photo.photoable_id%>">
-        <%= image_tag photo.photo(:trend_small) %>
+        <%= image_tag photo.photo(:trend_small), :style => "width:134px; height: 200px;" %>
 
       </a>
       <p  class="lnk_thmb">

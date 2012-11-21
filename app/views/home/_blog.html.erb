@@ -18,7 +18,7 @@
                 <span class="arrow_r_after"></span>
               </a>
             </h4>
-            <p><%= link_to sanitize(strip_tags(truncate(first_blog.summary, length: 200))), first_blog %></p>
+            <p><%= link_to sanitize(strip_tags(truncate(first_blog.summary, length: 180, :omission => "..read more"))), first_blog %></p>
             <p class="date"><%= first_blog.published_at.strftime("%^b  %d  %I:%M%p")%></p>
           </div>
         </div>
@@ -38,7 +38,7 @@
                   <%= blog.title %>
                   <span class="arrow_r_after"></span>
                 </a></h4>
-              <p><%= link_to sanitize(strip_tags(truncate(blog.summary, length: 200))), blog %></p>
+              <p><%= link_to sanitize(strip_tags(truncate(blog.summary, length: 180, :omission => "..read more"))), blog %></p>
               <p class="date"><%= link_to blog.published_at.strftime("%^b  %d  %I:%M%p"), blog %></p>
             </div>
           </div>

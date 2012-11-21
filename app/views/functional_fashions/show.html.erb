@@ -23,7 +23,7 @@
   <section style="margin-top: 30px;">
     <section  id="fashion_jury">
       <header class="heading">
-        <h1>MORE FUNCTIONAL FASHION BY <%= @functional_fashion.functional_fashion_designer.name %></h1>
+        <h1>VIEW MORE FROM <%= @functional_fashion.functional_fashion_designer.name %></h1>
       </header>
       <div class="row-fluid  jury_polaroid  ">
         <%= render @functional_fashion.functional_fashion_designer.functional_fashions.accessible_by(current_ability).recent %>

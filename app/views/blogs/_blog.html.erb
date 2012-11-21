@@ -6,7 +6,7 @@
         <span class="arrow_r_after"></span>
       </a>
     </h2>
-    <p><%= link_to sanitize(strip_tags(truncate(blog.summary, :length => 340))), blog_path(blog) %></p>
+    <p><%= link_to sanitize(strip_tags(truncate(blog.summary, length: 180, :omission => "..read more"))), blog_path(blog) %></p>
     <a  class="">
       <%= link_to image_tag(blog.blog_image(:trend_small)), blog %>
     </a>
