@@ -6,7 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
- User.create(:email => "a@y.com", :password => "uuuuuu", name: "admin")
-
- User.first.update_attribute(:admin, true)
+Blog.find_each do |story|
+  story.update_attribute(:description, story.content.gsub(/<\/?[^>]*>/, "").squeeze(" ").strip[0..200])
+end

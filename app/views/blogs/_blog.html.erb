@@ -6,9 +6,9 @@
         <span class="arrow_r_after"></span>
       </a>
     </h2>
-    <p><%= sanitize strip_tags(truncate(blog.content, :length => 340)) %></p>
+    <p><%= link_to sanitize(strip_tags(truncate(blog.summary, :length => 340))), blog_path(blog) %></p>
     <a  class="">
-      <%= image_tag blog.blog_image(:trend_small) %>
+      <%= link_to image_tag(blog.blog_image(:trend_small)), blog %>
     </a>
     <p class="blog_meta"> posted in
       <%= raw blog.tag_list.map {|t| link_to t, tag_path(t), class: "transitionable category" }.join(", ") %>

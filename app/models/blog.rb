@@ -1,5 +1,5 @@
 class Blog < ActiveRecord::Base
-  attr_accessible :content, :title, :blog_image, :published_at, :tag_list
+  attr_accessible :content, :title, :blog_image, :published_at, :tag_list, :description
   has_attached_file :blog_image, :styles => {:trend_small => "700x490>", :original => "800x800>"}
   validates_attachment_presence :blog_image
   validates_attachment_content_type :blog_image, :content_type => ['image/jpeg', 'image/png', 'image/gif']
@@ -8,6 +8,7 @@ class Blog < ActiveRecord::Base
   scope :unpublished, lambda { where('published_at > ?', Time.now.utc) }
   scope :recent, order('published_at DESC')
   validates :content, :title, :published_at, :presence => true
+  before_save :sanitize_data
 
   acts_as_taggable
 
@@ -57,6 +58,15 @@ class Blog < ActiveRecord::Base
 
   def published?
     published_at <= Time.zone.now
+  end
+
+  def summary
+    self.description.gsub!("&nbsp;", "")
+  end
+
+
+  def sanitize_data
+    self.description = content.gsub(/<\/?[^>]*>/, "").squeeze(" ").strip[0..200]
   end
 
   private

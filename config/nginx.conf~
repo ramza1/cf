@@ -2,6 +2,11 @@ upstream unicorn {
   server unix:/tmp/unicorn.cf.sock fail_timeout=0;
 }
 
+server{
+  server_name www.cfmagazineonline.com;
+  rewrite ^(.*) http://cfmagazineonline.com$1 permanent;
+}
+
 server {
   listen 80;
   server_name cfmagazineonline.com;

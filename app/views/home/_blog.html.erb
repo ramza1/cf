@@ -8,7 +8,7 @@
     <% first_blog = @blogs.first %>
       <div class="">
         <div class="span6">
-          <%= image_tag first_blog.blog_image(:trend_small) %>
+          <%= link_to image_tag(first_blog.blog_image(:trend_small)), first_blog %>
         </div>
         <div class="span6">
           <div class="caption">
@@ -18,7 +18,7 @@
                 <span class="arrow_r_after"></span>
               </a>
             </h4>
-            <p><%= strip_tags truncate(first_blog.content, length: 200) %></p>
+            <p><%= link_to sanitize(strip_tags(truncate(first_blog.summary, length: 200))), first_blog %></p>
             <p class="date"><%= first_blog.published_at.strftime("%^b  %d  %I:%M%p")%></p>
           </div>
         </div>
@@ -38,8 +38,8 @@
                   <%= blog.title %>
                   <span class="arrow_r_after"></span>
                 </a></h4>
-              <p><%= strip_tags truncate(blog.content, length: 200) %></p>
-              <p class="date"><%= blog.published_at.strftime("%^b  %d  %I:%M%p")%></p>
+              <p><%= link_to sanitize(strip_tags(truncate(blog.summary, length: 200))), blog %></p>
+              <p class="date"><%= link_to blog.published_at.strftime("%^b  %d  %I:%M%p"), blog %></p>
             </div>
           </div>
         </li>
