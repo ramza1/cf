@@ -8,13 +8,13 @@ class Blog < ActiveRecord::Base
   scope :unpublished, lambda { where('published_at > ?', Time.now.utc) }
   scope :recent, order('published_at DESC')
   validates :content, :title, :published_at, :presence => true
-  after_save :sanitize_data
+  #after_save :sanitize_data
 
   acts_as_taggable
 
   def self.search_published(query, tag_id = nil)
       published.primitive_search(query)
-    end
+  end
 
   def self.primitive_search(query, join = "AND")
     find(:all, :conditions => primitive_search_conditions(query, join))
@@ -61,7 +61,7 @@ class Blog < ActiveRecord::Base
   end
 
   def summary
-    self.description.gsub!("&nbsp;", "")
+    self.content.gsub!("&nbsp;", "")
   end
 
 
