@@ -8,7 +8,7 @@ class Blog < ActiveRecord::Base
   scope :unpublished, lambda { where('published_at > ?', Time.now.utc) }
   scope :recent, order('published_at DESC')
   validates :content, :title, :published_at, :presence => true
-  before_save :sanitize_data
+  after_save :sanitize_data
 
   acts_as_taggable
 
