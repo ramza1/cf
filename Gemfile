@@ -36,6 +36,8 @@ gem "simple_form"
 gem 'cancan'
 gem "will_paginate"
 gem 'acts-as-taggable-on'
+gem "sitemap_generator", "~> 4.0.alpha"
+gem "whenever", require: false
 
 
 
