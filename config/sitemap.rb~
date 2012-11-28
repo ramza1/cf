@@ -29,6 +29,10 @@ SitemapGenerator::Sitemap.create do
     add redcarpet_path(story), :lastmod => story.updated_at
   end
 
+  FashionJury.find_each do |story|
+    add fashion_fashion_jurie_path(story), :lastmod => story.updated_at
+  end
+
   MenFashion.find_each do |story|
     add fashion_men_fashion_path(story), :lastmod => story.updated_at
   end
