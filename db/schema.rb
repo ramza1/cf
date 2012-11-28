@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121121043232) do
+ActiveRecord::Schema.define(:version => 20121122153439) do
 
   create_table "blogs", :force => true do |t|
     t.string   "title"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20121121043232) do
     t.integer  "blog_image_file_size"
     t.datetime "blog_image_updated_at"
     t.datetime "published_at"
-    t.string   "description"
+    t.text     "description"
   end
 
   create_table "ckeditor_assets", :force => true do |t|

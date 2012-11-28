@@ -62,7 +62,7 @@ class Blog < ActiveRecord::Base
   end
 
   def summary
-    self.description.gsub("&nbsp;", "")
+    self.description.gsub!("&nbsp;", "")
   end
 
 
