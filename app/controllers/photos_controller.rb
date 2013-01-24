@@ -44,11 +44,11 @@ class PhotosController < ApplicationController
 
     respond_to do |format|
       if @photo.save
-        format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
+        format.html { redirect_to @parent, notice: 'Photo was successfully created.' }
         format.js
       else
         format.html { render action: "new", layout: "forms" }
-        format.js
+        format.js {render :template => "photos/error.js"}
       end
     end
   end

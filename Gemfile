@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -24,7 +24,7 @@ group :assets do
   gem 'jquery-ui-rails'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.1.4'
 gem 'paperclip'
 gem 'remotipart'
 gem 'ransack'
@@ -38,6 +38,10 @@ gem "will_paginate"
 gem 'acts-as-taggable-on'
 gem "sitemap_generator", "~> 4.0.alpha"
 gem "whenever", require: false
+gem 'roadie'
+
+gem 'quiet_assets', :group => :development
+
 
 
 

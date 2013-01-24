@@ -41,8 +41,10 @@ namespace :deploy do
   end
   after "deploy:finalize_update", "deploy:symlink_config"
 
+
   after "deploy:update_code" do
-    run "ln -s #{shared_path}/ckeditor_assets #{release_path}/public/ckeditor_assets"
+    run "mkdir -p #{release_path}/ckeditor_assets"
+    run "ln -nfs #{shared_path}/ckeditor_assets #{release_path}/public/ckeditor_assets"
   end
 
   desc "Make sure local git is in sync with remote."

@@ -1,0 +1,22 @@
+<%= provide :title, @newsletter.title %>
+<section   class="trend_show span8">
+
+  <header   class="show_header">
+    <h1 class="">
+      <%= @newsletter.title %>
+    </h1>
+  </header>
+  <div   class="media">
+    <%= raw @newsletter.body %>
+  </div>
+
+  <% if can? [:manage], @newsletter %>
+      <div class="form-actions">
+        <%= link_to 'Edit', edit_newsletter_path(@newsletter), class: "btn" %>
+        <%= link_to 'Back', newsletters_path, class: "btn" %>
+        <%= link_to "Delete", @newsletter, method: :delete, data: {confirm: "Are you sure"}, :class => "btn btn-danger" %>
+      </div>
+  <% end %>
+</section>
+
+

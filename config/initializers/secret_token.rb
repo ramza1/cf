@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Cf::Application.config.secret_token = 'de1b517b1fabcb8c92b607914fd747baa4bcf5bcaf3e9beffafb35aea815a3281a79cc8fd218e1951a5d8bd10985f9ddb5c6bd2d93a6bc6c4bc3ac9673c24c6b'
+Cf::Application.config.secret_token = 'd869e9ab6fb5d37a4338509cb4e2d54ffc0d96b480b741597a34ee90b5f60c06441e67de76d8ceadd344f79b927e2cf9ceba4867cf1c018c3d93f414a218e9f7'

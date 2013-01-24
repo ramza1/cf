@@ -1,0 +1,19 @@
+<%= provide :title, "News letter" %>
+<section  id="redcarpet" class="stamp span8">
+  <header   class="header_title">
+    <h1><a    href="#">News Letters</a></h1>
+  </header>
+  <%= render @newsletters %>
+
+  <div class="pager" style="margin-top: 30px;">
+    <%= will_paginate @newsletters %>
+  </div>
+
+
+
+  <% if can? :manage, Newsletter %>
+      <div class="form-actions">
+        <%= link_to "Create Newsletter", new_newsletter_path, class: "btn" %>
+      </div>
+  <% end %>
+</section>

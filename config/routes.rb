@@ -1,6 +1,13 @@
 Cf::Application.routes.draw do
 
 
+  resources :newsletters do
+    member do
+      post :mail_subscribers
+    end
+  end
+
+
   get 'tags/:tag', to: "blogs#index", as: :tag
   mount Ckeditor::Engine => '/ckeditor'
 

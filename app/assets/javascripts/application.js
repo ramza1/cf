@@ -13,12 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require jquery.remotipart
 //= require jquery.adipoli.min
 //= require raphael-min
 //= require jquery.easing
 //= require jquery.hoverIntent.minified
 //= require jquery.masonry.min
-//= require jquery.remotipart
 //= require jquery.elastislide
 //= require jQuery.selectmenu
 //= require facebox

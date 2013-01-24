@@ -17,8 +17,6 @@
           <% else %>
           <li><%= link_to "Join free", new_user_registration_path %></li>
           <li class="divider-vertical"></li>
-          <li><%= link_to "Login with facebook", user_omniauth_authorize_path(:facebook) %></li>
-              <li class="divider-vertical"></li>
           <li><%= link_to "Login with Twitter", user_omniauth_authorize_path(:twitter) %></li>
           <li class="divider-vertical"></li>
           <li><%= link_to "Sign in", new_user_session_path %></li>
@@ -26,7 +24,7 @@
         </ul>
         <div    class="nav btn_nav  pull-right">
           <a href="#subscribe" class="btn btn-danger ">
-            subscribe</a>
+            Subscribe to our newsletter</a>
           <%= image_tag current_user.image, class: "auth-image" if current_user && current_user.image.present? %>
         </div>
       </div>

@@ -1,0 +1,15 @@
+<div class="cover">
+  <div class="caption heading_b" style="text-align: left;">
+    <h2>
+      <a href="<%= url_for newsletter %>" rel="tooltip" class="arrow_append" data-original-title="<%= newsletter.title %>">
+        <%= newsletter.title %>
+        <span class="arrow_r_after"></span>
+      </a>
+    </h2>
+    <p><%= link_to sanitize(strip_tags(truncate(newsletter.summary, length: 180, :omission => ".. read more"))), newsletter_path(newsletter) %></p>
+    <p class="blog_meta"> posted in
+     <span class="date"> <%= newsletter.created_at.strftime("on %^b  %d  %I:%M%p")%></span>
+     <%= link_to "send newsletter", mail_subscribers_newsletter_path(newsletter), :method => :post, class: "btn" %>
+    </p>
+  </div>
+</div>

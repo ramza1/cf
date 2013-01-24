@@ -14,4 +14,11 @@
     <%= will_paginate functional_fashions %>
   </div>
   <% end %>
+
+  <% if can? :create, FunctionalFashion %>
+      <div class="form-actions">
+        <%= link_to 'Add Style Diary', new_style_functional_fashion_path,  class: "btn" %>
+        <%= link_to 'Add profile', new_functional_fashion_designer_path,  class: "btn" %>
+      </div>
+  <% end %>
 </section>
