@@ -37,7 +37,7 @@ gem 'cancan'
 gem "will_paginate"
 gem 'acts-as-taggable-on'
 gem "sitemap_generator", "~> 4.0.alpha"
-gem "whenever", "~> 0.7.3", require: false
+gem "whenever", "~> 0.7.2", require: false
 gem 'roadie'
 
 gem 'quiet_assets', :group => :development

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Gemfile" description="gem &quot;simple_form&quot;" line="34" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="930c64d0-65ba-44d1-b56e-a418c25bdf58" name="Default" comment="" />
     <ignored path="cf.iws" />
@@ -78,7 +81,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="1946" vertical-scroll-proportion="0.0">
+            <state line="28" column="28" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,7 +99,7 @@
       <file leaf-file-name="Capfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Capfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="45" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+            <state line="6" column="113" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -827,14 +830,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Capfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="45" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+        <state line="6" column="113" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1946" vertical-scroll-proportion="0.0">
+        <state line="28" column="28" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
