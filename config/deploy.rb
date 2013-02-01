@@ -43,9 +43,9 @@ namespace :deploy do
 
 
   after "deploy:update_code" do
-    run "mkdir -p #{release_path}/ckeditor_assets"
     run "ln -nfs #{shared_path}/ckeditor_assets #{release_path}/public/ckeditor_assets"
   end
+
 
 
   desc "Make sure local git is in sync with remote."
