@@ -40,6 +40,8 @@ gem "sitemap_generator", "~> 4.0.alpha"
 gem "whenever", "~> 0.7.2", require: false
 gem 'roadie'
 
+gem 'newrelic_rpm'
+
 gem 'quiet_assets', :group => :development
 
 
