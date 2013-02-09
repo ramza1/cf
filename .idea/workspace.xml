@@ -9,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/.gitignore" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360380588224" ignored="false" />
     <file path="$PROJECT_DIR$/db/schema.rb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360383104001" ignored="false" />
-    <file path="/application.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360385506708" ignored="false" />
+    <file path="/application.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360386342800" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="99" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.89285713">
+            <state line="98" column="135" selection-start="3954" selection-end="3954" vertical-scroll-proportion="0.8125">
               <folding />
             </state>
           </provider>
@@ -828,7 +828,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="99" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.89285713">
+        <state line="98" column="135" selection-start="3954" selection-end="3954" vertical-scroll-proportion="0.8125">
           <folding />
         </state>
       </provider>
