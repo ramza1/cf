@@ -1,6 +1,7 @@
 <% right_ads = RightAd.running_ads %>
 
 <% unless right_ads.empty? %>
+    <p class="ad">advertisement</p>
 <% cache "right_ads" do %>
 <div id="myCarousel" class="carousel slide">
   <!-- Carousel items -->
