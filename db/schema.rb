@@ -56,18 +56,6 @@ ActiveRecord::Schema.define(:version => 20130123192223) do
     t.datetime "published_at"
   end
 
-  create_table "fashion_tips", :force => true do |t|
-    t.string   "title"
-    t.text     "body"
-    t.datetime "published_at"
-    t.datetime "created_at",             :null => false
-    t.datetime "updated_at",             :null => false
-    t.string   "tip_image_file_name"
-    t.string   "tip_image_content_type"
-    t.integer  "tip_image_file_size"
-    t.datetime "tip_image_updated_at"
-  end
-
   create_table "features", :force => true do |t|
     t.string   "title"
     t.text     "content"
