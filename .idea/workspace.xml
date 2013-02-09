@@ -100,9 +100,10 @@
       <file leaf-file-name="_side_bar.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/application/_side_bar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="15" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.69330853">
+            <state line="94" column="15" selection-start="3933" selection-end="3933" vertical-scroll-proportion="0.94423795">
               <folding>
                 <element signature="n#style#0;n#aside#0;n#!!top" expanded="true" />
+                <element signature="tag#div#0;tag#section#4;tag#aside#0" expanded="false" />
                 <element signature="n#style#0;n#div#2;n#section#4;n#aside#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -854,9 +855,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/application/_side_bar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="15" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.69330853">
+        <state line="94" column="15" selection-start="3933" selection-end="3933" vertical-scroll-proportion="0.94423795">
           <folding>
             <element signature="n#style#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="tag#div#0;tag#section#4;tag#aside#0" expanded="false" />
             <element signature="n#style#0;n#div#2;n#section#4;n#aside#0;n#!!top" expanded="true" />
           </folding>
         </state>
