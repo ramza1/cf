@@ -19,6 +19,14 @@
       <%= image_tag @tip.tip_image(:trend_small), :alt => "" %>
     </div>
     <%= raw @tip.body %>
+    <div>
+      <span class='st_sharethis_vcount' displayText='ShareThis'></span>
+      <span class='st_facebook_vcount' displayText='Facebook'></span>
+      <span class='st_twitter_vcount' displayText='Tweet'></span>
+      <span class='st_linkedin_vcount' displayText='LinkedIn'></span>
+      <span class='st_pinterest_vcount' displayText='Pinterest'></span>
+      <span class='st_email_vcount' displayText='Email'></span>
+    </div>
   </div>
   <ul class="comments">
     <div class="fb-comments" data-href="<%= url_for @tip %>" data-num-posts="10" data-width="340"></div>
