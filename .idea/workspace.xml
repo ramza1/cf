@@ -7,6 +7,7 @@
     <list default="true" id="930c64d0-65ba-44d1-b56e-a418c25bdf58" name="Default" comment="" />
     <ignored path="cf.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/.gitignore" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360380588224" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="61" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+            <state line="19" column="2" selection-start="493" selection-end="493" vertical-scroll-proportion="0.47738692">
               <folding />
             </state>
           </provider>
@@ -95,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unicorn.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="unicorn.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="221" selection-end="221" vertical-scroll-proportion="0.1758794">
+            <state line="7" column="16" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/newsletter_mailer/news.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_nav_bar.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/application/_javascripts.html.erb" />
@@ -142,6 +142,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/config/initializers/_lib.rb" />
         <option value="$PROJECT_DIR$/config/unicorn.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -865,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="61" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/app1.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1221" column="8" selection-start="26085" selection-end="26092" vertical-scroll-proportion="0.0">
@@ -916,7 +910,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="221" selection-end="221" vertical-scroll-proportion="0.1758794">
+        <state line="7" column="16" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="2" selection-start="493" selection-end="493" vertical-scroll-proportion="0.47738692">
           <folding />
         </state>
       </provider>
