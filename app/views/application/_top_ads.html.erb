@@ -1,6 +1,7 @@
 <%
    top_ads = TopAd.running_ads
 %>
+<% unless top_ads.empty? %>
 <% cache "top_ads" do %>
 <div id="myCarousel4" class="carousel slide">
   <!-- Carousel items -->
@@ -13,4 +14,5 @@
     <div class="item"><%= link_to image_tag("930_3.png"), "#" %></div>
   </div>
 </div>
+<% end %>
 <% end %>
