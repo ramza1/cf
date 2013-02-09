@@ -6,7 +6,7 @@ class HomeController < ApplicationController
     @functional_fashions = FunctionalFashion.published.recent.limit(2)
     @collections =  Runway::Collection.published.recent.limit(4)
     @trend_spotting = TrendSpotting.published.recent.includes(:photos).first
-    @photos = @trend_spotting.photos.limit(4)  if @trend_spotting
+    @photos = @trend_spotting.photos.limit(6)  if @trend_spotting
     @videos = Video.published.recent.limit(7)
     @redcarpet = Redcarpet.published.recent.includes(:photos).first
     if @redcarpet
