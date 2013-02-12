@@ -28,7 +28,7 @@ gem 'jquery-rails', '~> 2.1.4'
 gem 'paperclip'
 gem 'remotipart'
 gem 'ransack'
-gem "ckeditor", "~> 3.7.3"
+gem "ckeditor", "~> 4.0.2"
 gem "omniauth-facebook", "~> 1.4.1"
 gem "devise", "~> 2.1.2"
 gem "omniauth-twitter", "~> 0.0.12"

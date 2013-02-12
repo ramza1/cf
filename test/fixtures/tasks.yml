@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  due_date: 2013-02-12 09:45:33
+  title: MyString
+  assign_to: 
+  description: MyText
+
+two:
+  due_date: 2013-02-12 09:45:33
+  title: MyString
+  assign_to: 
+  description: MyText
