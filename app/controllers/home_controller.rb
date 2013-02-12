@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @blogs = Blog.published.recent.limit(3)
+    @blogs = Blog.published.recent.limit(4)
     @fashion_juries = FashionJury.published.recent.limit(3)
     @men_fashion = MenFashion.published.recent.first
     @functional_fashions = FunctionalFashion.published.recent.limit(2)
