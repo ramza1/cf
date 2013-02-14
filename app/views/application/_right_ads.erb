@@ -1,5 +1,17 @@
 <% right_ads = RightAd.running_ads %>
-
+<div class="">
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-9043194741260146";
+  /* cf right small */
+  google_ad_slot = "8668909135";
+  google_ad_width = 300;
+  google_ad_height = 250;
+  //-->
+  </script>
+  <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
 <% unless right_ads.empty? %>
     <p class="ad">advertisement</p>
 <% cache "right_ads" do %>

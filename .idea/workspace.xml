@@ -14,7 +14,7 @@
     <file path="/show.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360387452790" ignored="false" />
     <file path="/_view_point.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360387263967" ignored="false" />
     <file path="/_top_ads.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360405679875" ignored="false" />
-    <file path="/_right_ads.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360405529170" ignored="false" />
+    <file path="/_right_ads.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360859154054" ignored="false" />
     <file path="/_style.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360406110294" ignored="false" />
     <file path="/_side_bar.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360407340366" ignored="false" />
     <file path="/_slide.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360407375441" ignored="false" />
@@ -34,15 +34,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_top_ads.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/application/_top_ads.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="23" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -61,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_show_point.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_show_point.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/trend_spottings/_show_point.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="30" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0">
+            <state line="24" column="13" selection-start="916" selection-end="916" vertical-scroll-proportion="0.44609666">
               <folding />
             </state>
           </provider>
@@ -73,25 +64,16 @@
       <file leaf-file-name="_next_page.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/application/_next_page.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="39" selection-start="229" selection-end="229" vertical-scroll-proportion="-1.875">
+            <state line="3" column="5" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="_slide.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/application/_slide.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="26" selection-start="720" selection-end="720" vertical-scroll-proportion="0.7826087">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_style.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/_style.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="146" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0">
+            <state line="22" column="4" selection-start="873" selection-end="873" vertical-scroll-proportion="-13.75">
               <folding />
             </state>
           </provider>
@@ -100,7 +82,7 @@
       <file leaf-file-name="_side_bar.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/application/_side_bar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="15" selection-start="3933" selection-end="3933" vertical-scroll-proportion="0.0">
+            <state line="94" column="15" selection-start="3933" selection-end="3933" vertical-scroll-proportion="-58.75">
               <folding />
             </state>
           </provider>
@@ -109,7 +91,16 @@
       <file leaf-file-name="_blog.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_blog.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="39" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0">
+            <state line="38" column="39" selection-start="1389" selection-end="1389" vertical-scroll-proportion="-7.4166665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -118,7 +109,16 @@
       <file leaf-file-name="_right_ads.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/application/_right_ads.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="35" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+            <state line="12" column="11" selection-start="383" selection-end="383" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/trend_spottings/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -146,13 +146,13 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_top_ads.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/_style.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/application/_right_ads.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_slide.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_side_bar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/_blog.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/trend_spottings/_show_point.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/application/_right_ads.erb" />
+        <option value="$PROJECT_DIR$/app/views/trend_spottings/_show_point.html.erb" />
       </list>
     </option>
   </component>
@@ -203,6 +203,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,6 +280,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trend_spottings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,19 +431,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../poploda" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -728,7 +750,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34848484" sideWeight="0.6702786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35454544" sideWeight="0.6702786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -800,16 +822,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/style/look_books/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="63" selection-start="888" selection-end="888" vertical-scroll-proportion="-11.875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/style/functional_fashions/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="63" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/redcarpets/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="65" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.0" />
@@ -822,9 +834,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="3355" selection-end="3523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="92" column="0" selection-start="3355" selection-end="3523" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/application/_top_ads.html.erb">
@@ -834,35 +844,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/application/_slide.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="873" selection-end="873" vertical-scroll-proportion="0.47026023" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/application/_right_ads.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="35" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/application/_side_bar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="15" selection-start="3933" selection-end="3933" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_style.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="146" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_blog.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="39" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -881,23 +865,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/trend_spottings/_show_point.html.erb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="30" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0">
+        <state line="30" column="26" selection-start="720" selection-end="720" vertical-scroll-proportion="0.7826087">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/application/_next_page.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="229" selection-end="229" vertical-scroll-proportion="-1.875">
+        <state line="3" column="5" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="26" selection-start="720" selection-end="720" vertical-scroll-proportion="0.7826087">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/_blog.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="39" selection-start="1389" selection-end="1389" vertical-scroll-proportion="-7.4166665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/application/_slide.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="4" selection-start="873" selection-end="873" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/application/_side_bar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="15" selection-start="3933" selection-end="3933" vertical-scroll-proportion="-58.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/application/_right_ads.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="383" selection-end="383" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/trend_spottings/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/trend_spottings/_show_point.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="916" selection-end="916" vertical-scroll-proportion="0.44609666">
           <folding />
         </state>
       </provider>

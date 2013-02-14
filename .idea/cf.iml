@@ -31,7 +31,7 @@
     <orderEntry type="library" scope="PROVIDED" name="cancan (v1.6.8, RVM: ruby-1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capistrano (v2.14.1, RVM: ruby-1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="chronic (v0.6.7, RVM: ruby-1.9.3-p374) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ckeditor (v3.7.3, RVM: ruby-1.9.3-p374) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ckeditor (v4.0.2, RVM: ruby-1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cocaine (v0.4.2, RVM: ruby-1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v3.2.2, RVM: ruby-1.9.3-p374) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.2.0, RVM: ruby-1.9.3-p374) [gem]" level="application" />
