@@ -9,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/.gitignore" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360380588224" ignored="false" />
     <file path="$PROJECT_DIR$/db/schema.rb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360383104001" ignored="false" />
-    <file path="/application.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360386342800" ignored="false" />
+    <file path="/application.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360859473657" ignored="false" />
     <file path="/_show_point.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360657792175" ignored="false" />
     <file path="/show.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360387452790" ignored="false" />
     <file path="/_view_point.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360387263967" ignored="false" />
@@ -34,15 +34,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="42" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/fashion/trend_spottings/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,10 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_show_point.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_show_point.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/trend_spottings/_show_point.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="13" selection-start="916" selection-end="916" vertical-scroll-proportion="0.44609666">
+            <state line="18" column="1" selection-start="689" selection-end="689" vertical-scroll-proportion="-11.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="109" selection-start="174" selection-end="174" vertical-scroll-proportion="0.111524165">
               <folding />
             </state>
           </provider>
@@ -143,7 +143,6 @@
         <option value="$PROJECT_DIR$/app/views/style/functional_fashions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/redcarpets/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_top_ads.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/_style.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_slide.html.erb" />
@@ -153,6 +152,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/application/_right_ads.erb" />
         <option value="$PROJECT_DIR$/app/views/trend_spottings/_show_point.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -302,6 +302,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="trend_spottings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -744,13 +766,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35454544" sideWeight="0.6702786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35454544" sideWeight="0.6702786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -830,11 +852,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/blogs/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="63" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="3355" selection-end="3523" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/application/_top_ads.html.erb">
@@ -923,7 +940,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trend_spottings/_show_point.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="916" selection-end="916" vertical-scroll-proportion="0.44609666">
+        <state line="18" column="1" selection-start="689" selection-end="689" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="109" selection-start="174" selection-end="174" vertical-scroll-proportion="0.111524165">
           <folding />
         </state>
       </provider>
