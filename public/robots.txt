@@ -4,5 +4,3 @@
 # User-Agent: *
 # Disallow: /
 
-http://cfmagazineonline.com/sitemap1.xml.gz
-http://cfmagazineonline.com/sitemap_index.xml.gz

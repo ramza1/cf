@@ -46,7 +46,7 @@ class Blog < ActiveRecord::Base
   end
 
   def to_param
-    "#{id} #{title}".parameterize
+    "#{id}-#{title.parameterize}"
   end
 
   def last_published?
