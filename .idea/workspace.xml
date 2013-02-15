@@ -19,7 +19,7 @@
     <file path="/_side_bar.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360407340366" ignored="false" />
     <file path="/_slide.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360407375441" ignored="false" />
     <file path="/blog.rb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360918218512" ignored="false" />
-    <file path="/_fashion.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360918385675" ignored="false" />
+    <file path="/_fashion.html.erb" changelist="930c64d0-65ba-44d1-b56e-a418c25bdf58" time="1360918864148" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <file leaf-file-name="_fashion.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_fashion.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="188" selection-start="523" selection-end="523" vertical-scroll-proportion="0.2777778">
+            <state line="10" column="73" selection-start="408" selection-end="408" vertical-scroll-proportion="0.2777778">
               <folding />
             </state>
           </provider>
@@ -951,7 +951,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_fashion.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="188" selection-start="523" selection-end="523" vertical-scroll-proportion="0.2777778">
+        <state line="10" column="73" selection-start="408" selection-end="408" vertical-scroll-proportion="0.2777778">
           <folding />
         </state>
       </provider>

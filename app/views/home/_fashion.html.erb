@@ -8,7 +8,7 @@
         <% @fashion_juries.each do |fashion_jury| %>
         <li class="span4">
           <div class="polaroid">
-            <%= link_to image_tag(fashion_jury.fashion_jury_image(:small)), fashion_fashion_jury_path(fashion_jury, format: :js), :class => "imageLink", rel: "facebox", style: "width:140px; height: 208px;" %>
+            <%= link_to image_tag(fashion_jury.fashion_jury_image(:small), style: "width:140px; height: 208px;"), fashion_fashion_jury_path(fashion_jury, format: :js), :class => "imageLink", rel: "facebox" %>
             <div class="stats">
               <p><em class="s"></em><span class="saves"><%= fashion_jury.score %></span><em class="l">&nbsp;/&nbsp;</em><span class="likes">10</span> </p>
             </div>
